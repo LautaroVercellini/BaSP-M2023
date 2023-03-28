@@ -2,7 +2,7 @@
 
 ## 🚀 About The Proyect
 
-In this repository I will work on a project for Radium Rocket with my team where we will develop a system to manage the schedules of the gym, schedules of the employees, the activities and memberships.
+In this repository I will work on a project for Radium Rocket with my team where we will develop a system to manage the schedules of the gym, schedules of the employees, the activities and memberships. 
 Said system must contain functionalities to can sign-up, log-in (both as user, admin, coach, etc.) choose type of membership and reserve classes that the user wish to asist, among others.
 Throughout the project I will describe week by week, wihch section was developed, and which technologies were learned and applied.
 
@@ -16,7 +16,7 @@ We learned about agile methodologies and worked as a team under the scrum method
 
 ## 👩‍💻 Week 02
 
-I worked on the mock-up of the landing page, emphasizing on the correct utilization of semantics elements of HTML.
+I worked on the mock-up of the landing page, emphasizing on the correct structure, the perfect syntax and correct utilization of semantics elements of HTML
 Also, I learned basics concepts of git y github. I made the commits and pushes to up all to the cloud.
 
 🛠 Hard and Soft Skills:

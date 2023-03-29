@@ -16,7 +16,7 @@ We learned about agile methodologies and worked as a team under the scrum method
 
 ## 👩‍💻 Week 02
 
-I worked on the mock-up of the landing page, emphasizing on the correct structure, the perfect syntax and correct utilization of semantics elements of HTML
+I worked on the mock-up of the landing page, emphasizing on the correct structure, the perfect syntax and correct utilization of semantics elements of HTML.
 Also, I learned basics concepts of git y github. I made the commits and pushes to up all to the cloud.
 
 🛠 Hard and Soft Skills:

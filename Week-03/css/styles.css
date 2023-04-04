@@ -1,215 +1,184 @@
-/* CSS
-Consistencia en el uso de espacios antes y después de las llaves “{“ y de los dos puntos “:” 
-Las clases se nombraran siguiendo la convención hyphenated, por ejemplo:
-btn-menu
-btn-close
-contact-form
-submit-contact-form
-social-media-icon
-
-Dentro de un archivo CSS los selectores deben estar ordenados:
-Primero deben aparecer los selectores de elementos.
-Después los demás selectores están ordenados por orden de aparición en el HTML
-Ejemplo: si el elemento con id show-scores en html está antes de side-bar deberían poner primero todas las reglas css que corresponden a #show-scores y después todas las reglas de #side-bar.
-Dentro de un bloque correspondiente a un selector CSS las propiedades deben estar ordenadas:
-Primero las propiedades position y display.
-
-En caso que el display sea flex van las reglas de flexbox (flex-direction, align-self, etc).
-Después van las reglas de "box-model": width, height, margin, padding, top, left, etc.
-Luego las reglas de background y border.
-A continuación las reglas de texto (font-size, text-shadow, etc).
-Por último las demás reglas.
-Los media queries pueden ser inclusivos o exclusivos, es decir que pueden usar siempre max-width o siempre min-width.
-En la clase utilizaremos el enfoque de mobile first.
-La breakpoints recomendados para media queries son:
-@media (min-width: 480px) {
-@media (min-width: 768px) {
-@media (min-width: 900px) {
-@media (min-width: 1024px) {
-@media (min-width: 1200px) { */
-
-
 body {
+    background-color: #E6E6EC;
     font-family: "roboto";
     font-style: normal;
-    background-color: #E6E6EC;
 }
 
 header {
-    width:1512px;
-    height:217px;
+    width: 1512px;
+    height: 217px;
 }
 
 aside {
-    float:left;
-    width:271px;
-    height:4700px;
+    float: left;
+    width: 271px;
+    height: 5324px;
 }
 
 nav {
     position: sticky;
-    display: inline-block;
     width: 271px;
-    height: 4723px;
-    margin-top:-3px;
+    height: 5300px;
     background-color: #373867;
 }
 
 li {
+    width: 80px;
+    height: 40px;
     margin-top: 50px;
     margin-left: 60px;
-    width: 80px;
-    height:40px;
     list-style: none;
-    color: #E6E6EC;
 }
 
 a {
-    text-decoration: none;
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-weight: 800;
     font-size: 23px;
     line-height: 27px;
-    text-align: center;
+    text-decoration: none;
 }
 
 h1, h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
+    text-align: center;
+}
+
+form {
+    position:absolute;
+    width: 665px;
+    height: 694px;
+    margin-left: 600px;
+    margin-top: 4550px;
+    border: 2px solid black;
+    background-color: #FFFFFF;
+    align-items: center;
 }
 
 textarea {
-    margin-top:30px;
+    margin-top: 30px;
     margin-left: 100px;
-    font-family: 'Roboto';
-    font-style: normal;
+    color: #373867;
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    color:#373867
 }
 
 footer {
     width: 1365px;
     height: 100px;
-    margin-top: 4700px;
+    margin-top: 5300px;
     padding-top: 30px;
     padding-left: 150px;
+    background-color: #FFFFFF;
     align-items: center;
     text-align: center;
-    background-color: #FFFFFF;
+}
+
+h6 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .logo-header {
-    position:absolute;
+    position: absolute;
     width: 160px;
-    height:160px;
-    margin-top:35px;
-    margin-left:60px;
+    height: 160px;
+    margin-top: 35px;
+    margin-left: 60px;
 }
 
 .title h1 {
     position: absolute;
     width: 294px;
     height: 47px;
-    left: 629px;
-    top: 60px;
+    margin-left: 629px;
+    margin-top: 80px;
     color: #373867;
 }
 
 .title p {
     position: absolute;
-    width:130px;
-    height:13px;
-    left: 780px;
-    top: 120px;
-    font-family: 'Roboto';
-    font-style: normal;
+    width: 130px;
+    height: 13px;
+    margin-left: 780px;
+    margin-top: 120px;
+    color: #373867;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: #373867;
 }
 
 .links-nav {
     position: fixed;
-    display: inline-block;
-    margin-left: -10px;
-    padding:0;
-    width:244px;
-    height:465px;
+    width: 244px;
+    height: 465px;
     text-align: center;
-    text-decoration: none;
     color: #E6E6EC;
 }
 
 .a-contact {
-    margin-top:80px;
-    margin-bottom: -20px;
+    margin-top: 60px;
+}
+
+.p-contact {
+    margin:0;
 }
 
 .container-01 {
     position:absolute;
-    display: inline-block;
     width: 1244px;
     height: 700px;
-    margin-top:-23px;
+    margin-left: 271px;
     background-image: url("../../Assets/Images/blue-gym-banner.png");
     background-repeat: no-repeat;
     background-position: center top;
 }
 
-.container-01 img {
-    width: 1244px;
-    height: 624px;
-}
-
 .container-01 h2 {
-    float:center;
-    margin-top: 160px;
-    margin-left: 100px;
     width: 1030px;
     height: 70px;
+    margin-top: 160px;
+    margin-left: 100px;
+    color: #FFFFFF;
     font-weight: 700px;
     font-size: 60px;
     line-height: 70px;
-    text-align: center;
-    color: #FFFFFF;
 }
 
 .container-01 p {
-    margin-left: 300px;
     width: 597px;
     height: 158px;
+    margin-left: 300px;
+    color: #FFFFFF;
     font-weight: 400px;
     font-size: 20px;
-    line-height: 30px;;
-    text-align: center;
-    color:#FFFFFF
+    line-height: 30px;
 }
 
 .container-02 {
     position: absolute;
-    display: inline-block;
     width: 1244px;
     height:624px;
-    margin-left: 0px;
     margin-top: 575px;
+    margin-left: 271px;
 }
 
 .container-02 h2 {
-    margin-top: 100px;
-    margin-left:150px;
     width: 392px;
     height: 47px;
+    margin-top: 100px;
+    margin-left:150px;
     color: #373867;
 }
 
 .container-02 p {
-    margin-left: 80px;
     width: 591px;
     height: 282px;
+    margin-left: 80px;
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -226,9 +195,9 @@ footer {
 
 .activities {
     position:absolute;
-    display:inline-block;
     width: 1244px;
     height: 1030px;
+    margin-left: 271px;
     margin-top: 1150px;
 }
 
@@ -238,32 +207,93 @@ footer {
     margin-top:80px;
     margin-right:800px;
     padding: 30px 80px;
-    text-align: center;
     background-color: #373867;
     color:#FFFFFF;
 }
 
+.activities h4 {
+    width: 400px;
+    height: 40px;
+    padding-top: 100px;
+    padding-left: 40px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+}
+
+.activities p {
+    width: 400px;
+    height: 90px;
+    padding-left: 50px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size :40px;
+    line-height: 47px;
+    text-align: center;
+}
+
+.img-crossfit {
+    width: 461px;
+    height: 471px;
+    margin-top: 125px;
+    margin-left: 156px;
+    background-image: url(../../Assets/Images/crossfit.png);
+    background-size: cover;
+}
+
+.img-spinning {
+    width: 461px;
+    height: 471px;
+    margin-top: -524px;
+    margin-left: 617px;
+    background-image: url(../../Assets/Images/spinning.png);
+    background-size: cover;
+}
+
+.img-functional {
+    width: 461px;
+    height: 471px;
+    margin-top: -54px;
+    margin-left: 156px;
+    background-image: url(../../Assets/Images/funcional.png);
+    background-size: cover;
+}
+
+.img-boxing {
+    width: 461px;
+    height: 471px;
+    margin-top: -524px;
+    margin-left: 617px;
+    background-image: url(../../Assets/Images/boxi.png);
+    background-size: cover;
+}
+
+.img-fitness {
+    width: 461px;
+    height: 471px;
+    margin-top: -54px;
+    margin-left: 156px;
+    background-image: url(../../Assets/Images/musculacion.png);
+    background-size: cover;
+}
+
 .memberships {
     position:absolute;
-    display: inline-block;
     width: 1244px;
-    margin-top: 2180px;
+    margin-top: 2900px;
+    margin-left: 271px;
 }
 
 .memberships h2 {
     width: 540px;
     height: 47px;
-    margin-top:80px;
-    margin-right:800px;
+    margin-top: 80px;
+    margin-right: 800px;
     padding: 35px 80px;
-    text-align: center;
     background-color: #373867;
-    color:#FFFFFF;
-}
-.memb-type img {
-    float:center;
-    width:395px;
-    height: 402px;
+    color: #FFFFFF;
 }
 
 .memb-type {
@@ -273,97 +303,82 @@ footer {
     box-sizing: border-box;
 }
 
+.memb-type img {
+    float: center;
+    width: 395px;
+    height: 402px;
+}
+
 .memb-type h3 {
     width: 237px;
     height:  71px;
     padding-left: 85px;
+    color: #373867;
     font-weight: 700px;
     font-size: 30px;
     line-height: 35px;
     text-align: center;
-    color:#373867;
 }
 
-.memb-type p{
+.memb-type p {
+    color:#373867;
     font-weight: 400px;
     font-size: 15px;
     line-height: 18px;
-    color:#373867;
 }
 
-.memb-only button {
+.memb-type button {
+    width: 410px;
+    height: 72px;
     margin-top: 66px;
-    width: 410px;
-    height: 72px;
-    font-weight: 700;
-    font-size: 30.596px;
-    line-height: 36px;
     background-color: #49A373;
     color: #FFFFFF;
-}
-
-.memb-classic button {
-    margin-top: 15px;
-    width: 410px;
-    height: 72px;
     font-weight: 700;
-    font-size: 30.596px;
+    font-size: 30px;
     line-height: 36px;
-    background-color: #49A373;
-    color: #FFFFFF;
-}
-
-.memb-black button {
-    width: 410px;
-    height: 72px;
-    font-weight: 700;
-    font-size: 30.596px;
-    line-height: 36px;
-    background-color: #49A373;
-    color: #FFFFFF;
 }
 
 .universe {
     position: absolute;
-    display: inline-block;
     width: 1244px;
     height: 508px;
-    margin-top: 3300px;
+    margin-top: 4000px;
+    margin-left: 271px;
     background-color:#AACE9B;
 }
 
 .universe h3 {
     width: 495px;
     height: 100px;
-    margin-left: 50px;
+    margin-left: 130px;
+    color: #FFFFFF;
     font-weight: 700px;
     font-size: 65px;
     line-height: 76px;
-    text-align: center;
-    color: #FFFFFF;
 }
 
 .universe h4 {
-    width: 0px;
-    height: 0px;
-    margin-left: 70px;
+    width: 200px;
+    height: 15px;
+    margin-left: 130px;
     font-weight: 400;
-    font-size: 32.8016px;
+    font-size: 33px;
     line-height: 38px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     text-align: center;
 }
 
 .universe p {
     width: 400px;
     height: 100px;
-    margin-left: 70px;
+    margin-left: 130px;
     margin-bottom: 300px;
-    font-weight: 400;
-    font-size: 32.8016px;
-    line-height: 38px;
     color:#FFFFFF;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 38px;
 }
+
 .universe img {
     float: right;
     width: 400px;
@@ -371,98 +386,85 @@ footer {
     margin-top: -610px;
 }
 
-.form {
-    position:absolute;
-    margin-left: 600px;
-    margin-top: 3850px;
-    width: 665px;
-    height: 694px;
-    border: 2px solid black;
-    background-color: #FFFFFF;
-    align-items: center;
-}
-
 .form h5 {
+    color:#373867;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
-    color:#373867;
     text-align: center;
 }
 
 .option1 {
+    display: inline-block;
     width: 200px;
     height: 20px;
-    display: inline-block;
+    margin-left: 50px;
+    padding: 5px 10px 2px 10px;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 5px 10px 2px 10px;
-    margin-left: 50px;
+    color:#373867;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color:#373867;
     text-align: center;
 }
 
 .option2 {
     width: 280px;
     height: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 10px 2px 10px;
     margin-top: -30px;
     margin-left: 320px;
+    padding: 5px 10px 2px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:#373867;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color:#373867;
     text-align: center;
 }
 
 .option3 {
     width: 400px;
     height: 20px;
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 5px 10px 2px 10px;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 5px 10px 2px 10px;
-    margin-left: 150px;
-    margin-top: 20px;
+    color:#373867;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color:#373867;
     text-align: center;
 }
 
 .placeholder-name {
-    display: inline-block;
     width: 193px;
     height: 37px;
-    padding:5px 10px;
     margin-top: 50px;
     margin-left: 80px;
+    padding:5px 10px;
     border-radius: 5px;
-    color: blue;
 }
 
 .placeholder-surname {
     width: 193px;
     height: 37px;
-    padding:5px 10px;
     margin-top: -47px;
     margin-left: 300px;
+    padding:5px 10px;
     padding-left: 40px;
     border-radius: 5px;
 }
 
 .placeholders-email {
-    width: 500px;
+    width: 300px;
     height: 37px;
+    margin-top: 30px;
+    margin-left: 200px;
     padding:5px 10px;
     border-left: 200px;
-    margin-left: 200px;
-    margin-top: 30px;
     border-radius: 5px;
 }
 
@@ -472,16 +474,12 @@ footer {
     margin-top: 20px;
     margin-left: 250px;
     border-radius: 5px;
-    padding: 10px, 24px;
-    align-items: center;
-    text-align: center;
-    font-weight: 500px;
-    font-size: 13px;
-    line-height: 15px;
     background-color: #AACE9B;
-    color:#373867
+    color:#373867;
+    text-align: center;
+    font-size: 13px;
 }
 
 .footer a {
-    padding: 0px 30px;
+    padding: 10px 50px;
 }

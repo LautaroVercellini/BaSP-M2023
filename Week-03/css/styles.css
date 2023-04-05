@@ -1,4 +1,5 @@
 body {
+    width: 1512px;
     background-color: #E6E6EC;
     font-family: "roboto";
     font-style: normal;
@@ -120,7 +121,7 @@ textarea {
 }
 
 footer {
-    width: 1365px;
+    width: 1512px;
     height: 100px;
     margin-top: 5500px;
     padding-top: 30px;
@@ -138,7 +139,7 @@ h6 {
 
 .container-01 {
     position: absolute;
-    width: 1244px;
+    width: 1241px;
     height: 700px;
     margin-left: 271px;
     background-image: url("../../Assets/Images/blue-gym-banner.png");
@@ -169,7 +170,7 @@ h6 {
 
 .container-02 {
     position: absolute;
-    width: 1244px;
+    width: 1241px;
     height:624px;
     margin-top: 575px;
     margin-left: 271px;
@@ -203,7 +204,7 @@ h6 {
 
 .activities {
     position:absolute;
-    width: 1244px;
+    width: 1241px;
     height: 1030px;
     margin-top: 1150px;
     margin-left: 271px;
@@ -289,7 +290,7 @@ h6 {
 
 .memberships {
     position: absolute;
-    width: 1244px;
+    width: 1241px;
     margin-top: 2900px;
     margin-left: 271px;
 }
@@ -392,7 +393,7 @@ h6 {
 
 .universe {
     position: absolute;
-    width: 1244px;
+    width: 1241px;
     height: 508px;
     margin-top: 4200px;
     margin-left: 271px;

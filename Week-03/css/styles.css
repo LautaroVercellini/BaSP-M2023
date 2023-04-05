@@ -9,37 +9,83 @@ header {
     height: 217px;
 }
 
+header img {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+header h1 {
+    position: absolute;
+    width: 294px;
+    height: 47px;
+    margin-left: 629px;
+    margin-top: 80px;
+    color: #373867;
+}
+
+header p {
+    position: absolute;
+    width: 130px;
+    height: 13px;
+    margin-left: 780px;
+    margin-top: 120px;
+    color: #373867;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
 aside {
     float: left;
     width: 271px;
-    height: 5324px;
+    height: 5500px;
 }
 
 nav {
     position: sticky;
     width: 271px;
-    height: 5300px;
+    height: 5500px;
     background-color: #373867;
+}
+
+nav div {
+    position: fixed;
+    width: 244px;
+    height: 465px;
+    color: #E6E6EC;
+    text-align: center;
+}
+
+.a-contact {
+    margin-top: 50px;
+}
+
+nav p {
+    margin-left: 20px;
+    margin-top: -20px;
 }
 
 li {
     width: 80px;
     height: 40px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 55px;
     list-style: none;
 }
 
 a {
     color: #FFFFFF;
-    font-weight: 800;
+    font-weight: 800px;
     font-size: 23px;
     line-height: 27px;
     text-decoration: none;
 }
 
 h1, h2 {
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 40px;
     line-height: 47px;
     text-align: center;
@@ -50,14 +96,22 @@ form {
     width: 665px;
     height: 694px;
     margin-left: 600px;
-    margin-top: 4550px;
+    margin-top: 4750px;
     border: 2px solid black;
     background-color: #FFFFFF;
     align-items: center;
 }
 
+form h5 {
+    color: #373867;
+    font-weight: 500px;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
 textarea {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 100px;
     color: #373867;
     font-weight: 500;
@@ -68,68 +122,22 @@ textarea {
 footer {
     width: 1365px;
     height: 100px;
-    margin-top: 5300px;
+    margin-top: 5500px;
     padding-top: 30px;
-    padding-left: 150px;
+    padding-left: 220px;
     background-color: #FFFFFF;
-    align-items: center;
     text-align: center;
 }
 
 h6 {
     margin-top: 20px;
-    font-weight: 600;
+    font-weight: 600px;
     font-size: 14px;
     line-height: 16px;
-}
-
-.logo-header {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    margin-top: 35px;
-    margin-left: 60px;
-}
-
-.title h1 {
-    position: absolute;
-    width: 294px;
-    height: 47px;
-    margin-left: 629px;
-    margin-top: 80px;
-    color: #373867;
-}
-
-.title p {
-    position: absolute;
-    width: 130px;
-    height: 13px;
-    margin-left: 780px;
-    margin-top: 120px;
-    color: #373867;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.links-nav {
-    position: fixed;
-    width: 244px;
-    height: 465px;
-    text-align: center;
-    color: #E6E6EC;
-}
-
-.a-contact {
-    margin-top: 60px;
-}
-
-.p-contact {
-    margin:0;
 }
 
 .container-01 {
-    position:absolute;
+    position: absolute;
     width: 1244px;
     height: 700px;
     margin-left: 271px;
@@ -179,26 +187,26 @@ h6 {
     width: 591px;
     height: 282px;
     margin-left: 80px;
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 40px;
     line-height: 47px;
     color:#373867;
 }
 
-.img-c02 {
+.container-02 img {
     float: right;
     width: 577px;
     height: 577px;
-    margin-left: 600px;
     margin-top:-480px;
+    margin-left: 600px;
 }
 
 .activities {
     position:absolute;
     width: 1244px;
     height: 1030px;
-    margin-left: 271px;
     margin-top: 1150px;
+    margin-left: 271px;
 }
 
 .activities h2 {
@@ -217,7 +225,7 @@ h6 {
     padding-top: 100px;
     padding-left: 40px;
     color: #FFFFFF;
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 40px;
     line-height: 47px;
     text-align: center;
@@ -228,7 +236,7 @@ h6 {
     height: 90px;
     padding-left: 50px;
     color: #FFFFFF;
-    font-weight: 700;
+    font-weight: 700px;
     font-size :40px;
     line-height: 47px;
     text-align: center;
@@ -280,7 +288,7 @@ h6 {
 }
 
 .memberships {
-    position:absolute;
+    position: absolute;
     width: 1244px;
     margin-top: 2900px;
     margin-left: 271px;
@@ -290,29 +298,28 @@ h6 {
     width: 540px;
     height: 47px;
     margin-top: 80px;
-    margin-right: 800px;
     padding: 35px 80px;
-    background-color: #373867;
     color: #FFFFFF;
+    background-color: #373867;
 }
 
-.memb-type {
-    float:left;
+.memberships article {
+    float: left;
     width: 33.3%;
     text-align: center;
     box-sizing: border-box;
 }
 
-.memb-type img {
+.memberships img {
     float: center;
     width: 395px;
     height: 402px;
 }
 
-.memb-type h3 {
+.memberships h3 {
     width: 237px;
     height:  71px;
-    padding-left: 85px;
+    padding-left: 71px;
     color: #373867;
     font-weight: 700px;
     font-size: 30px;
@@ -320,29 +327,74 @@ h6 {
     text-align: center;
 }
 
-.memb-type p {
+.memberships li {
+    width: 270px;
+    height: 20px;
+    margin-left: 9px;
     color:#373867;
-    font-weight: 400px;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 18px;
 }
 
-.memb-type button {
-    width: 410px;
+.memberships p {
+    width: 378px;
+    height:15px;
+    margin-top: 50px;
+    border-top: 1px solid #373867;
+    padding-top: 30px;
+    color:#373867;
+    text-align: center;
+}
+
+.memberships button {
+    width: 377px;
     height: 72px;
-    margin-top: 66px;
+    margin-top: 25px;
     background-color: #49A373;
     color: #FFFFFF;
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 30px;
     line-height: 36px;
+}
+
+.memb-text-only {
+    position: absolute;
+    width: 375px;
+    height: 396px;
+    margin-top: -50px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border-top: 46px solid #979797;
+    border-radius: 5px;
+}
+
+.memb-text-class {
+    position: absolute;
+    width: 375px;
+    height: 520px;
+    margin-top: -50px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border-top: 46px solid #979797;
+    border-radius: 5px;
+}
+
+.memb-text-black {
+    position: absolute;
+    width: 375px;
+    height: 590px;
+    margin-top: -50px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border-top: 46px solid #979797;
+    border-radius: 5px;
 }
 
 .universe {
     position: absolute;
     width: 1244px;
     height: 508px;
-    margin-top: 4000px;
+    margin-top: 4200px;
     margin-left: 271px;
     background-color:#AACE9B;
 }
@@ -361,7 +413,7 @@ h6 {
     width: 200px;
     height: 15px;
     margin-left: 130px;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 33px;
     line-height: 38px;
     color: #FFFFFF;
@@ -374,7 +426,7 @@ h6 {
     margin-left: 130px;
     margin-bottom: 300px;
     color:#FFFFFF;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 33px;
     line-height: 38px;
 }
@@ -386,24 +438,16 @@ h6 {
     margin-top: -610px;
 }
 
-.form h5 {
-    color:#373867;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-}
-
 .option1 {
     display: inline-block;
     width: 200px;
-    height: 20px;
+    height: 25px;
     margin-left: 50px;
-    padding: 5px 10px 2px 10px;
+    padding: 5px 10px 0px 10px;
     border: 1px solid black;
     border-radius: 5px;
     color:#373867;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -411,14 +455,14 @@ h6 {
 
 .option2 {
     width: 280px;
-    height: 20px;
-    margin-top: -30px;
+    height: 24px;
+    margin-top: -33px;
     margin-left: 320px;
-    padding: 5px 10px 2px 10px;
+    padding: 5px 10px 0px 10px;
     border: 1px solid black;
     border-radius: 5px;
     color:#373867;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -426,52 +470,71 @@ h6 {
 
 .option3 {
     width: 400px;
-    height: 20px;
-    margin-top: 20px;
-    margin-left: 150px;
-    padding: 5px 10px 2px 10px;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 120px;
+    padding: 5px 10px 0px 10px;
     border: 1px solid black;
     border-radius: 5px;
     color:#373867;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
 }
 
 .placeholder-name {
-    width: 193px;
-    height: 37px;
-    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+}
+
+.placeholder-name input {
+    width:200px;
+    height: 20px;
+    margin-top: 60px;
     margin-left: 80px;
     padding:5px 10px;
+    border: 1px solid #373867;
     border-radius: 5px;
+    color: grey
 }
 
 .placeholder-surname {
-    width: 193px;
-    height: 37px;
-    margin-top: -47px;
-    margin-left: 300px;
+    width: 300px;
+    height: 50px;
+}
+
+.placeholder-surname input {
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 350px;
     padding:5px 10px;
-    padding-left: 40px;
+    border: 1px solid #373867;
     border-radius: 5px;
+    color: grey
 }
 
 .placeholders-email {
-    width: 300px;
-    height: 37px;
-    margin-top: 30px;
-    margin-left: 200px;
-    padding:5px 10px;
-    border-left: 200px;
+    width: 384px;
+    height: 50px;
+}
+
+.placeholders-email input {
+    width: 430px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 5px 10px;
+    border: 1px solid #373867;
     border-radius: 5px;
+    color: grey
 }
 
 .submit-bottom {
     width: 156px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 250px;
     border-radius: 5px;
     background-color: #AACE9B;

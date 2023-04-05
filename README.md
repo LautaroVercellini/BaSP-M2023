@@ -22,7 +22,7 @@ I worked on the mock-up of the landing page, emphasizing on the correct structur
 
 ## 👩‍💻 Week 03
 
-This week the work was based on styling to the website. I created the corresponding styles sheet, a reset.css was used to reset all the default values of HTML elements and I started work from scratch section by section, element by element, developing the website under the "Pixel Perfect" norm.
+This week the work was based on style the website. I created the corresponding styles sheet, a reset.css file was used to reset all the default values of HTML elements and I started work from scratch section by section, element by element, developing the website under the "Pixel Perfect" norm.
 
 The pixel perfect modality is based on designing and achieving absolute perfection, making digital products offer a perfect experience to users.
 

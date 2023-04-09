@@ -1,0 +1,155 @@
+aside {
+    display: none;
+}
+
+ul {
+    padding:0;
+    width: 100%;
+    color: #373867;
+    list-style: none;
+    line-height: 30px;
+}
+
+.our-philoshophy {
+    display: flex;
+    height: 245px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    background-image: url("../../Assets/Images/blue-gym-banner.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.our-philoshophy p {
+    display:flex;
+}
+
+
+.why-mega-rocket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: #373867;
+}
+
+.why-mega-rocket p {
+    width: 80%;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.why-mega-rocket img {
+    display: none;
+}
+
+.activities {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities h2 {
+    margin-bottom: 30px;
+    padding: 15px 40px;
+    align-self: flex-start;
+    background-color: #373867;
+    color: #FFFFFF;
+}
+
+.activities p {
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height:20px;
+}
+
+.activities div {
+    width:270px;
+    height: 270px;
+    margin-bottom: 10px;
+}
+
+.img-crossfit {
+    background-image: url("../../Assets/Images/crossfit.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.img-spinning {
+    background-image: url("../../Assets/Images/spinning.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.img-functional {
+    background-image: url("../../Assets/Images/funcional.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.img-boxing {
+    background-image: url("../../Assets/Images/boxi.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.img-fitness {
+    background-image: url("../../Assets/Images/musculacion.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.memberships {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberships h2 {
+    margin-bottom: 30px;
+    padding: 15px 40px;
+    align-self: flex-start;
+    background-color: #373867;
+    color: #FFFFFF;
+}
+
+.memberships img {
+    width: 100%;
+    height:100%;
+}
+
+.memberships p {
+    width: auto;
+    padding: 20px;
+    color: #373867;
+    border-top: 1px solid #AFAFC2;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.memberships button {
+    width: 100%;
+    background-color: #49A373;
+    color: #FFFFFF;
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+[class^="memb-text"] {
+    position: relative;
+    width: 80%;
+    margin-top: -50px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border-top: 46px solid #979797;
+    border-radius: 5px;
+}

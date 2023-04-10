@@ -1,6 +1,9 @@
+* {
+    margin:0;
+    padding:0;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
     background-color: #E6E6EC;
     font-family: "roboto";
     font-style: normal;
@@ -8,28 +11,20 @@ body {
 }
 
 h2 {
+    font-weight: 700;
     font-size: 20px;
     line-height: 23px;
 }
 
 h3 {
-    color: #373867;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 30px;
     line-height: 35px;
 }
 
 h4 {
-    color: #FFFFFF;
     font-size: 30px;
     line-height: 40px;
-}
-
-p {
-    width: 75%;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 15px;
 }
 
 span {

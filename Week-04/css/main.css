@@ -3,11 +3,14 @@ aside {
 }
 
 ul {
-    padding:0;
-    width: 100%;
+    margin: 5% 0;
     color: #373867;
     list-style: none;
     line-height: 30px;
+}
+
+li {
+    padding: 2% 0;
 }
 
 .our-philoshophy {
@@ -23,7 +26,10 @@ ul {
 }
 
 .our-philoshophy p {
-    display:flex;
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
 }
 
 
@@ -32,12 +38,13 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 10%;
     color: #373867;
 }
 
 .why-mega-rocket p {
     width: 80%;
+    margin: 5% 0;
     font-weight: 700;
     font-size: 15px;
 }
@@ -51,13 +58,27 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
+}
+
+.activities div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:270px;
+    height: 270px;
+    margin-bottom: 10px;
 }
 
 .activities h2 {
-    margin-bottom: 30px;
+    margin-bottom: 10%;
     padding: 15px 40px;
     align-self: flex-start;
     background-color: #373867;
+    color: #FFFFFF;
+}
+
+.activities h4 {
     color: #FFFFFF;
 }
 
@@ -67,12 +88,6 @@ ul {
     font-weight: 700;
     font-size: 20px;
     line-height:20px;
-}
-
-.activities div {
-    width:270px;
-    height: 270px;
-    margin-bottom: 10px;
 }
 
 .img-crossfit {
@@ -113,7 +128,7 @@ ul {
 }
 
 .memberships h2 {
-    margin-bottom: 30px;
+    margin: 15% 0;
     padding: 15px 40px;
     align-self: flex-start;
     background-color: #373867;
@@ -123,6 +138,11 @@ ul {
 .memberships img {
     width: 100%;
     height:100%;
+}
+
+.memberships h3 {
+    margin: 5% 0;
+    color: #373867;
 }
 
 .memberships p {
@@ -146,10 +166,184 @@ ul {
 [class^="memb-text"] {
     position: relative;
     width: 80%;
-    margin-top: -50px;
-    margin-left: 40px;
-    margin-bottom: 20px;
+    margin: -12% 10% 10% 10%;
     background-color: #FFFFFF;
     border-top: 46px solid #979797;
     border-radius: 5px;
+}
+
+.banners {
+    display: flex;
+    flex-direction: column;
+}
+
+[class^="universe"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+[class^="universe"] h3 {
+    margin: 10% 10% 5% 10%;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+[class^="universe"] h4, p {
+    width: 80%;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+[class^="universe"] img {
+    width: 130px;
+    height: 130px;
+    margin: 5% 0;
+}
+
+.universe-reservation {
+    background-color: #AACE9B;
+}
+
+.universe-reservation h3 {
+    color: #FFFFFF;
+}
+
+.universe-reservation h4 {
+    color: #FFFFFF;
+}
+
+.universe-reservation p {
+    color: #FFFFFF;
+}
+
+
+.universe-membership {
+    display: none;
+    background-color: #373867;
+}
+
+.universe-membership h3 {
+    color: #FFFFFF;
+}
+
+.universe-membership h4 {
+    color: #FFFFFF;
+}
+
+.universe-membership p {
+    color: #FFFFFF;
+}
+
+.universe-schedule {
+    display: none;
+    background-color: #FFFFFF;
+}
+
+.universe-schedule h3 {
+    color: #373867;
+}
+
+.universe-schedule h4 {
+    color: #373867;
+}
+
+.universe-schedule p {
+    color: #373867;
+}
+
+.universe-contact {
+    display: none;
+    background-color: #919194;
+}
+
+.universe-contact h3 {
+    color: #373867;
+}
+
+.universe-contact h4 {
+    color: #373867;
+}
+
+.universe-contact p {
+    color: #373867;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 10% 10%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+form h5 {
+    margin: 20px 0px;
+    color: #373867;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.select-form {
+    display:flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 9px;
+    color: #373867;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.select-form label {
+    margin-left: 3px;
+}
+
+.placeholder {
+    display: flex;
+    border-radius: 5px;
+    color: #373867;
+    opacity: 0.5;
+}
+
+.placeholder input {
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.placeholder-email {
+    border-radius: 5px;
+    color: #373867;
+    opacity: 0.5;
+}
+
+.placeholder-email input {
+    margin: 10px;
+    padding:5px;
+}
+
+textarea {
+    color: #373867;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.submit-bottom {
+    margin: 10px 0px;
+    padding: 8px 18px;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    color:#373867;
+    font-size: 13px;
 }

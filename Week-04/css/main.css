@@ -1,21 +1,9 @@
-aside {
+.aside {
     display: none;
-}
-
-ul {
-    margin: 5% 0;
-    color: #373867;
-    list-style: none;
-    line-height: 30px;
-}
-
-li {
-    padding: 2% 0;
 }
 
 .our-philoshophy {
     display: flex;
-    height: 245px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -25,28 +13,27 @@ li {
     background-size: cover;
 }
 
-.our-philoshophy p {
-    margin-top: 5%;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 15px;
+.our-philoshophy h2 {
+    padding: 2em 0em 1em 0em;
 }
 
+.our-philoshophy p {
+    width: 70%;
+    padding-bottom: 1em;
+    font-weight: 400;
+}
 
 .why-mega-rocket {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+    margin: 10% 0;
     color: #373867;
 }
 
 .why-mega-rocket p {
     width: 80%;
-    margin: 5% 0;
+    margin: 5% 10%;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .why-mega-rocket img {
@@ -56,7 +43,6 @@ li {
 .activities {
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 5%;
 }
@@ -65,6 +51,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     width:270px;
     height: 270px;
     margin-bottom: 10px;
@@ -80,14 +67,15 @@ li {
 
 .activities h4 {
     color: #FFFFFF;
+    line-height: 1em;
 }
 
 .activities p {
     width: 100%;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 20px;
-    line-height:20px;
+    font-size: 1.7em;
+    line-height: 1em;
 }
 
 .img-crossfit {
@@ -143,15 +131,16 @@ li {
 .memberships h3 {
     margin: 5% 0;
     color: #373867;
+    line-height: 1em;
 }
 
 .memberships p {
-    width: auto;
-    padding: 20px;
+    width: 100%;
+    padding: 1.5em 0em;
     color: #373867;
     border-top: 1px solid #AFAFC2;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.2em;
 }
 
 .memberships button {
@@ -159,17 +148,28 @@ li {
     background-color: #49A373;
     color: #FFFFFF;
     font-weight: 700px;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 2.4em;
+    line-height: 2em;
 }
 
 [class^="memb-text"] {
     position: relative;
     width: 80%;
-    margin: -12% 10% 10% 10%;
+    margin: -50px 10% 10% 10%;
     background-color: #FFFFFF;
     border-top: 46px solid #979797;
     border-radius: 5px;
+}
+
+[class^="memb-text"] ul {
+    margin: 5% 0;
+    color: #373867;
+    list-style: none;
+    line-height: 30px;
+}
+
+[class^="memb-text"] li {
+    padding: 2% 0;
 }
 
 .banners {
@@ -187,20 +187,21 @@ li {
 [class^="universe"] h3 {
     margin: 10% 10% 5% 10%;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 4em;
+    line-height: 1em;
 }
 
-[class^="universe"] h4, p {
+[class^="universe"] h4 {
     width: 80%;
+    margin: 0% 10% 5% 10%;
     font-weight: 400px;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.7em;
+    line-height: 1em;
 }
 
 [class^="universe"] img {
-    width: 130px;
-    height: 130px;
+    width: 30%;
+    height: 30%;
     margin: 5% 0;
 }
 
@@ -283,11 +284,11 @@ form {
 }
 
 form h5 {
-    margin: 20px 0px;
+    margin: 1em 0;
     color: #373867;
     font-weight: 500px;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.8em;
+    line-height: 1.8em;
     text-align: center;
 }
 
@@ -295,13 +296,13 @@ form h5 {
     display:flex;
     align-items: center;
     font-weight: 500;
-    font-size: 10px;
-    line-height: 9px;
+    font-size: 0.8em;
+    line-height: 0.7em;
     color: #373867;
     border: 1px solid #373867;
     border-radius: 5px;
-    padding: 8px;
-    margin-bottom: 5px;
+    padding: 0.8em;
+    margin-bottom: 1em;
 }
 
 .select-form label {
@@ -317,7 +318,7 @@ form h5 {
 
 .placeholder input {
     width: 100%;
-    margin: 10px;
+    margin: 1em;
     padding: 5px;
 }
 
@@ -325,25 +326,267 @@ form h5 {
     border-radius: 5px;
     color: #373867;
     opacity: 0.5;
+    margin: 1em;
 }
 
 .placeholder-email input {
-    margin: 10px;
     padding:5px;
 }
 
 textarea {
+    width: 80%;
     color: #373867;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 1em;
+    line-height: 1em;
 }
 
 .submit-bottom {
-    margin: 10px 0px;
-    padding: 8px 18px;
+    margin: 1em 0em;
+    padding: 0.7em 1.7em;
     border-radius: 5px;
     background-color: #AACE9B;
     color:#373867;
-    font-size: 13px;
+    font-size: 1em;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .why-mega-rocket {
+        display: flex;
+        align-items: center;
+    }
+
+    .why-mega-rocket img {
+        display: block;
+        width: 50%;
+        height: 50%;
+    }
+
+    .activities article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .activities div {
+        margin: 0;
+    }
+
+    .memberships article {
+        width: 80%;
+        margin: 5% 10%;
+    }
+
+    .universe-reservation {
+        display:flex;
+        flex-direction: row;
+    }
+
+    form {
+        display: block;
+    }
+
+    form h5 {
+        margin:0;
+        padding: 1em;
+
+    }
+
+    form div:nth-child(2) {
+        display: inline-block;
+        margin-right: 0.3em;
+        margin-bottom: 2em;
+    }
+
+    form div:nth-child(3) {
+        display: inline-block;
+    }
+
+    form div:nth-child(4) {
+        display: inline-block;
+        margin-top: 0.7em;
+        margin-bottom: 2em;
+    }
+
+    .submit-bottom {
+        display: block;
+        margin-left: 40%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    main {
+        display: flex;
+    }
+
+    .main-content {
+        width: 80%;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        padding: auto;
+        background-color: #373867;
+    }
+
+    aside {
+        padding: auto;
+    }
+
+    nav {
+        position: fixed;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    nav li {
+        margin-top: 2em;
+        list-style: none;
+    }
+
+    nav a {
+        font-weight: 800;
+        font-size: 1.5em;
+        line-height: 2em;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    nav p {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+
+    .our-philoshophy p {
+        width: 60%;
+    }
+
+    .our-philoshophy p {
+        margin-bottom: 5em;
+    }
+
+    .why-mega-rocket {
+        display: flex;
+        align-items: center;
+    }
+
+    .why-mega-rocket h2 {
+        font-size: 2.4em;
+    }
+
+    .why-mega-rocket p {
+        font-size: 2em;
+    }
+
+    .why-mega-rocket img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .activities article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .activities div {
+        margin: 0;
+        width: 25em;
+        height: 25em;
+    }
+
+    .memberships {
+        display:flex;
+    }
+
+    .memberships h2 {
+        width: 50%;
+    }
+
+    .memberships-01 {
+        display: flex;
+    }
+
+    .memberships img {
+        width:100%;
+        height: 400px;
+    }
+
+    .memberships h3 {
+        font-weight: 700px;
+        font-size: 2em;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    .memberships button {
+        margin-top: 25px;
+        background-color: #49A373;
+        color: #FFFFFF;
+        font-weight: 700px;
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    .universe-reservation {
+        display:flex;
+        flex-direction: row;
+    }
+
+    form {
+        display: block;
+    }
+
+    form h5 {
+        margin:0;
+        padding: 1em;
+
+    }
+
+    form div:nth-child(2) {
+        display: inline-block;
+        margin-right: 0.3em;
+        margin-bottom: 2em;
+    }
+
+    form div:nth-child(3) {
+        display: inline-block;
+    }
+
+    form div:nth-child(4) {
+        display: inline-block;
+        margin-top: 0.7em;
+        margin-bottom: 2em;
+    }
+
+    .placeholder {
+        padding: 9px;
+    }
+
+    .placeholder-email {
+        padding: 9px;
+        margin-bottom: 3em;
+    }
+
+    .submit-bottom {
+        display: block;
+        margin-left: 40%;
+    }
+
+    textarea {
+        width: 60%;
+    }
 }

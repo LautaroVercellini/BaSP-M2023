@@ -30,3 +30,12 @@ This week was a real challenge!
 
 ### 🛠 Technologies: CSS
 
+## 👩‍💻 Week 04
+
+After I worked with the "Pixel Perfect" norm, I finally met Flex-Box!
+
+This week I worked on creating a responsive desing for the website. I started from scratch under the approach Mobile First, developing the css file with the tools that I used the last week and Flex-Box, combining different ways to style the HTML file.
+
+Flex-Box is a CSS3 module created to improve the way of work when develop responsive models, transforming rigid containers into flexible ones, facilitating the work when different elements must be positioned inside them.
+
+### 🛠 Technologies: Flex-Box

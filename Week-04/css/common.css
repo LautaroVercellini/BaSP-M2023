@@ -8,19 +8,19 @@ body {
     font-family: "roboto";
     font-style: normal;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 h2 {
     font-weight: 700;
-    font-size: 2em;
-    line-height: 2em;
+    font-size: 1.7em;
+    line-height: 1.7em;
 }
 
 h3 {
     font-weight: 700;
     font-size: 2.5em;
-    line-height: 2.9em;
+    line-height: 2.5em;
 }
 
 h4 {
@@ -39,6 +39,12 @@ span {
 }
 
 @media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
     body {
         font-size: 20px;
     }

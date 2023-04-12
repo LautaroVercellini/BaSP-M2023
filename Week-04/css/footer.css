@@ -1,22 +1,20 @@
 footer {
     display:flex;
     justify-content: space-evenly;
+    height: 3em;
     background-color: #FFFFFF;
-    margin-top: 5%;
 }
 
 footer img {
-    padding: 5px;
-    width: 30px;
-    height: 30px;
+    padding: 0.5em;
+    width: 2em;
+    height: 2em;
 }
 
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) {
     footer {
-        height: 2em;
         justify-content: center;
-        margin: 0;
     }
 
     footer a {
@@ -26,9 +24,7 @@ footer img {
 
 @media (min-width: 1024px) {
     footer {
-        height: 2em;
         justify-content: center;
-        margin: 0;
     }
 
     footer a {

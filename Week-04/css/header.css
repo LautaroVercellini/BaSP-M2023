@@ -31,7 +31,7 @@ header .icon-menu {
     margin-right: 5%;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     header {
         justify-content: flex-start;
     }

@@ -2,6 +2,27 @@
     display: none;
 }
 
+.nav-burger {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 17em;
+    background-color: #373867;
+}
+
+.nav-burger li {
+    margin: 1em 0em 1em 0em;
+    list-style: none;
+}
+
+.nav-burger a {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-decoration: none;
+}
+
 .our-philoshophy {
     display: flex;
     flex-direction: column;
@@ -58,8 +79,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 22.5em;
-    height: 22.5em;
+    width: 18em;
+    height: 18em;
     margin-bottom: 1em;
 }
 
@@ -121,38 +142,42 @@
 
 .memberships img {
     width: 100%;
-    height: auto;
 }
 
 .memberships-text {
     position: relative;
     width: 80%;
-    margin: -40px 10% 10% 10%;
+    margin: -40px 10% 3em 10%;
     background-color: #FFFFFF;
     border-top: 35px solid #979797;
     border-radius: 5px;
 }
 
 .memberships-text h3 {
-    margin: 0.5em 0;
+    margin: 1em 0;
     color: #373867;
     line-height: 1em;
 }
 
 .memberships-text ul {
-    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
     color: #373867;
     list-style: none;
     line-height: 30px;
 }
 
 .memberships-text li {
-    padding: 2% 0;
+    align-self: flex-start;
+    padding: 0.3em 0em;
+    margin-left: 1em;
 }
 
 .memberships-text p {
     width: 100%;
-    padding: 1.5em 0em;
+    margin-top: 1em;
+    padding: 2em 0em;
     color: #373867;
     border-top: 1px solid #AFAFC2;
     font-weight: 400;
@@ -169,19 +194,8 @@
     line-height: 1.5em;
 }
 
-.banners {
-    display: flex;
-    flex-direction: column;
-}
-
-[class^="universe"] {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 [class^="universe"] h3 {
-    margin: 1em 1em 0em 1em;
+    padding-top: 2em;
     font-weight: 700;
     font-size: 4em;
     line-height: 1em;
@@ -189,7 +203,7 @@
 
 [class^="universe"] h4 {
     width: 80%;
-    margin: 0% 10% 2% 10%;
+    margin: 3% 10% 3% 10%;
     font-weight: 400px;
     font-size: 1.7em;
     line-height: 1em;
@@ -197,7 +211,7 @@
 
 [class^="universe"] p {
     width: 80%;
-    padding: 0% 10% 5% 10%;
+    padding: 0% 10% 3% 10%;
     margin-bottom: 1em;
 }
 
@@ -336,8 +350,8 @@ textarea {
     font-size: 1em;
 }
 
-@media (min-width: 601px) {
 
+@media screen and (min-width: 600px) {
     .why-mega-rocket {
         display: flex;
         align-items: center;
@@ -352,25 +366,50 @@ textarea {
     .activities article {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        width: 90%;
+        margin: 0% 5% 0% 5%;
     }
 
     .activities div {
-        margin: 0;
+        flex-wrap: wrap;
+        width: 12.9em;
+        height: 12.9em;
+        margin:0;
+    }
+
+    .activities h4 {
+        font-size: 2em;
+    }
+
+    .activities p {
+        font-size: 1em;
     }
 
     .memberships img {
-        width: 100%;
+        width: 80%;
     }
 
     .memberships-text {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
-    .universe-reservation {
+    [class^="universe"] {
+        display: flex;
         flex-direction: row;
+        align-items: center;
+    }
+
+    [class^="universe"] h3 {
+        padding: 1em 0em 0.2em 0em;
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    [class^="universe"] img {
+        width: 10em;
     }
 
     .select-form-01 {
@@ -389,7 +428,7 @@ textarea {
 
 
 
-@media (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     main {
         display: flex;
     }
@@ -433,23 +472,9 @@ textarea {
         line-height: 1.4em;
     }
 
-    .why-mega-rocket {
-        display: flex;
-        align-items: center;
-    }
-
-    .why-mega-rocket h2 {
-        font-size: 2em;
-    }
-
-    .why-mega-rocket p {
-        font-size: 1.7em;
-    }
-
-    .why-mega-rocket img {
-        display: block;
-        width: 22em;
-        height: 22em;
+    .activities div {
+        width: 25em;
+        height: 25em;
     }
 
     .memberships h2 {
@@ -479,12 +504,6 @@ textarea {
         font-weight: 700px;
         font-size: 1.5em;
         line-height: 2em;
-    }
-
-    .universe-reservation {
-        display:flex;
-        flex-direction: row;
-        margin-top: 8em;
     }
 
     .select-form-01 {

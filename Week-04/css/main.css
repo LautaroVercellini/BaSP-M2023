@@ -350,7 +350,6 @@ textarea {
     font-size: 1em;
 }
 
-
 @media screen and (min-width: 600px) {
     .why-mega-rocket {
         display: flex;
@@ -398,13 +397,26 @@ textarea {
     [class^="universe"] {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-items: center;
+    }
+
+    .universe-membership {
+        display: none;
+    }
+
+    .universe-schedule {
+        display: none;
+    }
+
+    .universe-contact {
+        display: none;
     }
 
     [class^="universe"] h3 {
         padding: 1em 0em 0.2em 0em;
         font-weight: 700;
-        font-size: 3em;
+        font-size: 2em;
         line-height: 1em;
     }
 
@@ -425,8 +437,6 @@ textarea {
         margin: 2em 0;
     }
 }
-
-
 
 @media screen and (min-width: 1024px) {
     main {
@@ -504,18 +514,5 @@ textarea {
         font-weight: 700px;
         font-size: 1.5em;
         line-height: 2em;
-    }
-
-    .select-form-01 {
-        display: inline;
-    }
-
-    .select-form-02 {
-        display: inline;
-    }
-
-    .select-form-03 {
-        display: inline-block;
-        margin: 2em 0;
     }
 }

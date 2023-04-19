@@ -6,6 +6,10 @@
 3. [Week 02](#week-02)
 4. [Week 03](#week-03)
 5. [Week 04](#week-04)
+6. [Week 05](#week-05)
+
+<br>
+<h3>link to github pages: https://lautarovercellini.github.io/BaSP-M2023/Week-04/index.html</h3>
 <br>
 <h2 id="project"> 🚀 About The Project </h2>
 <br>
@@ -55,6 +59,9 @@ Flex-Box is a CSS3 module created to improve the way of work when develop respon
 <br>
 And now, I've met my friend JavaScript!
 This week I worked with my new friend JavaScript, we spent the whole week solving exercises on different topics, such as variables, strings, arrays, if-else statements, for loops and functions.
-The objective of this week was to understand the logic of programming with JavaScript to start applying operation to the website
+The objective of this week was to understand the logic of programming with JavaScript to start applying operation to the website.
 
+### 🛠 Technologies: JavaScript
+<br>
+<br>
 > Author: Lautaro Vercellini

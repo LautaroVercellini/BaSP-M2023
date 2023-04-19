@@ -147,10 +147,14 @@
 .memberships-text {
     position: relative;
     width: 80%;
-    margin: -40px 10% 3em 10%;
+    margin: -40px 10% 5em 10%;
     background-color: #FFFFFF;
     border-top: 35px solid #979797;
     border-radius: 5px;
+}
+
+.memberships-text:nth-child(2) {
+    margin-bottom: 15em;
 }
 
 .memberships-text h3 {
@@ -195,9 +199,9 @@
 }
 
 [class^="universe"] h3 {
-    padding-top: 2em;
+    padding-top: 1em;
     font-weight: 700;
-    font-size: 4em;
+    font-size: 3.5em;
     line-height: 1em;
 }
 
@@ -285,7 +289,7 @@ form h5 {
     line-height: 0.7em;
 }
 
-[class^="select-form"]label {
+[class^="select-form"] label {
     padding: 1em;
 }
 
@@ -350,6 +354,13 @@ textarea {
     font-size: 1em;
 }
 
+@media screen and (min-width: 450px) {
+    .activities div {
+        width: 25em;
+        height: 25em;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .why-mega-rocket {
         display: flex;
@@ -371,8 +382,8 @@ textarea {
 
     .activities div {
         flex-wrap: wrap;
-        width: 12.9em;
-        height: 12.9em;
+        width: 11em;
+        height: 11em;
         margin:0;
     }
 
@@ -401,6 +412,14 @@ textarea {
         align-items: center;
     }
 
+    [class^="universe"] h3 {
+        font-size: 4.5em;
+    }
+
+    [class^="universe"] img {
+        width: 12em;
+    }
+
     .universe-membership {
         display: none;
     }
@@ -411,17 +430,6 @@ textarea {
 
     .universe-contact {
         display: none;
-    }
-
-    [class^="universe"] h3 {
-        padding: 1em 0em 0.2em 0em;
-        font-weight: 700;
-        font-size: 2em;
-        line-height: 1em;
-    }
-
-    [class^="universe"] img {
-        width: 10em;
     }
 
     .select-form-01 {
@@ -483,8 +491,12 @@ textarea {
     }
 
     .activities div {
-        width: 25em;
-        height: 25em;
+        width: 20em;
+        height: 20em;
+    }
+
+    .memberships-01:nth-child(3) {
+        margin-bottom: 1em;
     }
 
     .memberships h2 {
@@ -496,15 +508,24 @@ textarea {
     }
 
     .memberships-01 img {
-        width: 100%;
-        height: 35%;
+        width:100%;
+        height: 15em;
     }
 
     .memberships-01 h3 {
         font-weight: 700px;
-        font-size: 1.8em;
+        font-size: 1.2em;
         line-height: 2em;
         text-align: center;
+    }
+
+    .memberships-01 h4 {
+        font-size: 1em;
+    }
+
+    .memberships-01 li {
+        margin: 0;
+        font-size: 1em;
     }
 
     .memberships-01 button {

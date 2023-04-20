@@ -7,9 +7,7 @@
 4. [Week 03](#week-03)
 5. [Week 04](#week-04)
 6. [Week 05](#week-05)
-
 <br>
-<h3>link to github pages: https://lautarovercellini.github.io/BaSP-M2023/Week-04/index.html</h3>
 <br>
 <h2 id="project"> 🚀 About The Project </h2>
 <br>
@@ -53,15 +51,18 @@ This week I worked on creating a responsive desing for the website. I started fr
 Flex-Box is a CSS3 module created to improve the way of work when develop responsive models, transforming rigid containers into flexible ones, facilitating the work when different elements must be positioned inside them.
 
 ### 🛠 Technologies: Flex-Box
+<h3>Github Pages: <a href="https://lautarovercellini.github.io/BaSP-M2023/Week-04/index.html">Cick here</a></h3>
 <br>
 <br>
 <h2 id="week-05">👩‍💻 Week 05</h2>
 <br>
 And now, I've met my friend JavaScript!
+<br>
 This week I worked with my new friend JavaScript, we spent the whole week solving exercises on different topics, such as variables, strings, arrays, if-else statements, for loops and functions.
 The objective of this week was to understand the logic of programming with JavaScript to start applying operation to the website.
 
 ### 🛠 Technologies: JavaScript
+<h3>Github Pages: <a href="https://lautarovercellini.github.io/BaSP-M2023/Week-05/index.html">Cick here</a></h3>
 <br>
 <br>
-> Author: Lautaro Vercellini
+Author: Lautaro Vercellini

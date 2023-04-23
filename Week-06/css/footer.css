@@ -1,0 +1,23 @@
+footer {
+    display:flex;
+    justify-content: space-evenly;
+    height: 3em;
+    background-color: #FFFFFF;
+}
+
+footer img {
+    padding: 0.5em;
+    width: 2em;
+    height: 2em;
+}
+
+
+@media screen and (min-width: 600px){
+    footer {
+        justify-content: center;
+    }
+
+    footer a {
+        padding: 0em 2em;
+    }
+}

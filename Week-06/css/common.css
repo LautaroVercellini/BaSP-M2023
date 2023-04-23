@@ -1,0 +1,51 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #E6E6EC;
+    font-family: "roboto";
+    font-style: normal;
+    text-align: center;
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 1.7em;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 2.5em;
+}
+
+h4 {
+    font-size: 2.5em;
+    line-height: 3em;
+}
+
+span {
+    color: #AACE9B;
+}
+
+@media screen and (min-width:600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        font-size: 20px;
+    }
+}

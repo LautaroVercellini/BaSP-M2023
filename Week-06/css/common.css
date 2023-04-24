@@ -4,12 +4,13 @@
 }
 
 body {
-    background-color: #E6E6EC;
+    background-color: #FFFFFF;
     font-family: "roboto";
     font-style: normal;
     text-align: center;
     font-size: 14px;
 }
+
 
 h2 {
     font-weight: 700;
@@ -49,3 +50,4 @@ span {
         font-size: 20px;
     }
 }
+

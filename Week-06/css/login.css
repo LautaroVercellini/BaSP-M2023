@@ -1,0 +1,141 @@
+aside {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 10% 10%;
+    border: 0.1em solid black;
+    background-color: #E6E6EC;
+}
+
+form h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0em;
+    color: #FFFFFF;
+    background-color: #373867;
+    font-weight: 400;
+    font-size: 1.3em;
+    align-self: center;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 2em;
+}
+
+.labels label {
+    color: #373867;
+    align-self: flex-start;
+    margin-top: 2em;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.labels input {
+    width: 100%;
+    padding: 0.2em;
+    color:  #373867;
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.remember-forgot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+}
+
+[type="checkbox"] {
+    box-sizing: border-box;
+    margin-right: 0.3em;
+}
+
+.check-remember {
+    padding: 3em 0 1.5em 0;
+    color: #373867;
+}
+
+form a {
+    padding: 0 0 2em 0;
+    color: #373867;
+    text-decoration: none;
+}
+
+.submit-bottom {
+    margin: 3% 0 5% 0;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color:#373867;
+    opacity: 1;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+    }
+
+    .main-content {
+        width: 80%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 20%;
+        background-color: #373867;
+    }
+
+    nav {
+        position: fixed;
+        margin-top: 10em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 4em;
+    }
+
+    nav li {
+        padding: 3em 0em 0em 0em;
+        list-style: none;
+    }
+
+    nav li:nth-child(3) {
+        padding-bottom: 2em;
+    }
+
+    nav a {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 1.8em;
+        line-height: 0.8em;
+        text-decoration: none;
+    }
+
+    .labels {
+        width: 50%;
+    }
+
+    .remember-forgot {
+        width: 50%;
+    }
+
+}

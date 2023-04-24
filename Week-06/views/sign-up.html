@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sign-Up Mega Rocket Gym</title>
+      <meta name="description" content="Login of Mega Rocket Gym">
+      <link rel="stylesheet" href="../css/reset.css">
+      <link rel="stylesheet" href="../css/header.css">
+      <link rel="stylesheet" href="../css/sign-up.css">
+      <link rel="stylesheet" href="../css/common.css">
+      <link rel="icon" href="../Assets/Images/radium-rocket.png" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../../Assets/Images/radium-rocket-logo.png" alt="Logo Rocket">
+        <div>
+          <h1>THE BEST GYM</h1>
+          <p>MEGA ROCKET S.A</p>
+        </div>
+        <img class="icon-menu" src="../../Assets/Images/menu-icon.png" alt="menu-icon">
+    </header>
+    <main>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#log-in">Log-In</a></li>
+            <li><a href="#sign-up">Sign-Up</a></li>
+            <li><a href="#Home">Home</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <form action="" name="form-sing-up" autocomplete="on" >
+          <h2>Create Account</h2>
+          <div class="container-form-names">
+            <div class="form-name">
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" value="Name" />
+            </div>
+            <div class="form-surname">
+              <label for="form-sing-up">Surname</label>
+              <input id="surname" type="text" name="surname" value="Surname">
+            </div>
+          </div>
+          <div class="container-form-idnumber-birthdate">
+            <div class="form-id-number">
+              <label for="form-sing-up">Id Number</label>
+              <input id="id-number" type="text" name="id-number" value="Id Number">
+            </div>
+            <div class="form-birthdate">
+              <label for="form-sing-up">Birthdate</label>
+              <input id="birthdate" type="date" name="birthdate" value="1/1/1900">
+            </div>
+          </div>
+          <div class="container-form-phone-adress">
+            <div class="form-phone">
+              <label for="form-sing-up">Phone</label>
+              <input id="phone" type="text" name="phone" value="Phone">
+            </div>
+            <div class="form-adress">
+              <label for="form-sing-up">Adress</label>
+              <input id="adress" type="text" name="adress" value="Adress"/>
+            </div>
+          </div>
+          <div class="container-form-location-postalcode">
+            <div class="form-location">
+              <label for="form-sing-up">Location</label>
+              <input id="location" type="text" name="location" value="Location">
+            </div>
+            <div class="form-postalcode">
+              <label for="form-sing-up">Postal Code</label>
+              <input id="postal-code" type="text" name="postal-code" value="Postal Code"/>
+            </div>
+          </div>
+          <div class="container-form-email">
+            <div class="form-email">
+              <label for="form-sing-up">Email</label>
+              <input id="email" type="text" name="email" value="Email">
+            </div>
+          </div>
+          <div class="container-form-passwords">
+            <div class="form-password">
+              <label for="form-sing-up">Password</label>
+              <input id="password" type="text" name="password" value="Password"/>
+            </div>
+            <div class="form-password-repeat">
+              <label for="form-sing-up">Repeat Password</label>
+              <input id="password" type="text" name="password" value="Password"/>
+            </div>
+          </div>
+          <div class="memberships">
+            <div class="select-only-classes">
+              <input type="radio" name="memberships" value="only-classes">
+              <label for="form-sing-up">Only Classes</label><label class="price" for="form-info">$9.99</label>
+            </div>
+            <div class="select-only-classic">
+              <input type="radio" name="memberships" value="only-classic">
+              <label for="form-sing-up">Only Classic</label><label class="price" for="form-info">$19.99</label>
+            </div>
+            <div class="select-best-black">
+              <input type="radio" name="memberships" value="best-black">
+              <label for="form-sing-up">Best Black</label><label class="price" for="form-info">$39.99</label>
+            </div>
+          </div>
+          <input class="submit-bottom"type="submit" value="Register">
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

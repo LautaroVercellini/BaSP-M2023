@@ -265,6 +265,7 @@ form {
     margin: 10% 10%;
     background-color: #FFFFFF;
     border-radius: 1.5em;
+    border: 1px solid #000000;
 }
 
 form h5 {

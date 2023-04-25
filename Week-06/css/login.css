@@ -82,6 +82,18 @@ form a {
     font-size: 1em;
 }
 
+.red-border {
+    border: 2px solid #EB2222;
+}
+
+.field-error {
+    display: none;
+    padding: 0.2em 0.3em;
+    background-color: #FF494980;
+    border-radius: 10px;
+    color:  #EB2222;
+}
+
 @media screen and (min-width: 1024px) {
     main {
         display: flex;

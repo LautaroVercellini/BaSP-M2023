@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/login.css">
         <link rel="stylesheet" href="../css/common.css">
-        <link rel="icon" href="../Assets/Images/radium-rocket.png" type="image/x-icon">
+        <script defer src="../js/login.js"></script>
+        <link rel="icon" href="../../Assets/Images/radium-rocket.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -33,19 +34,22 @@
           </nav>
         </aside>
         <div class="main-content">
-          <form action="" name="form-info" autocomplete="on" >
+          <form action="" name="form-info" >
             <h2>Log-In</h2>
+            <p id="required" class="field-error">*Fields are required</p>
             <div class="labels">
-              <label for="form-info">Email:</label>
-              <input id="email" type="text" name="email" value="example@example.com">
-              <label for="password">Password:</label>
-              <input id="name" type="passwrod" name="password" value="Password">
+              <label for="form-sing-up">Email</label>
+              <input id="email" type="text" name="email" value="Email">
+              <p id="incorrect-email" class="field-error">invalid format email</p>
+              <label for="form-sing-up">Password</label>
+              <input id="password" type="text" name="password" value="Password"/>
+              <p id="incorrect-password" class="field-error">min 8 characters. numbers and letters</p>
             </div>
             <div class="remember-forgot">
               <label class="check-remember"><input type="checkbox">Remember me</label>
               <p><a href="forgot-psw">Forgot your password?</a></p>
             </div>
-            <input class="submit-bottom"type="submit" value="Login">
+            <input id="submit-buttom" class="submit-bottom"type="submit" value="Login">
           </form>
         </div>
       </main>

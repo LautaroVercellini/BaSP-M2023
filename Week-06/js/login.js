@@ -1,10 +1,11 @@
-var validaciones = {
-    correctos: {},
-    incorrectos: {}
-}
+var validaciones= {
+    correctos:{},
+    incorrectos:{}
+};
 
-console.log(validaciones.incorrectos);
 console.log(validaciones.correctos);
+console.log(validaciones.incorrectos);
+
 
 function containsLetter(value) {
     for (var i = 0; i < value.length; i++) {
@@ -35,13 +36,13 @@ email.onblur = function() {
     if (email.value == ""){
         required.style.display="block";
         email.classList.add("red-border");
-        validaciones.incorrectos["email"] = "Email is empty";
+        validaciones.incorrectos.email = "Email is empty";
     } else if (!validEmail.test(email.value)){
         email.classList.add("red-border");
         errorEmail.style.display="block";
-        validaciones.incorrectos["email:"] = "Invalid format email";
+        validaciones.incorrectos.email = "Invalid format email";
     }else
-        validaciones.correctos["email"] = email.value;
+        validaciones.correctos.email = email.value;
 }
 
 email.onfocus = function() {
@@ -49,6 +50,8 @@ email.onfocus = function() {
     errorEmail.style.display="none";
     required.style.display="none";
     email.value = "";
+    delete validaciones.incorrectos.email;
+    delete validaciones.correctos.email;
 }
 
 var psw = document.getElementById("password");
@@ -58,13 +61,13 @@ psw.onblur = function () {
     if (psw.value.length == 0) {
         required.style.display="block";
         psw.classList.add("red-border");
-        validaciones.incorrectos["Password:"] = "Incorrect password";
+        validaciones.incorrectos.password = "Incorrect password";
     } else if (!containsLetter(psw.value) || !containsNumber(psw.value) || psw.value.length < 8) {
         psw.classList.add("red-border");
         incorrectPsw.style.display="block";
-        validaciones.incorrectos["Password:"] = "Password must contain letters and numbers";
+        validaciones.incorrectos.password = "Password must contain letters and numbers";
     } else {
-        validaciones.correctos["password"] = "Correct password";
+        validaciones.correctos.password = password.value;
     }
 }
 
@@ -73,10 +76,19 @@ psw.onfocus = function() {
     incorrectPsw.style.display="none";
     required.style.display="none";
     psw.value = "";
+    delete validaciones.incorrectos.password;
+    delete validaciones.correctos.password;
 }
+
 
 var submitBottom = document.querySelector("#submit-buttom");
 submitBottom.onclick = function(e) {
-    e.preventDefault()
+    e.preventDefault();
+        if (Object.keys(validaciones.incorrectos).length > 0) {
+            alert("The fields are wrong:\n" + JSON.stringify(validaciones.incorrectos));
+        } else if (Object.keys(validaciones.correctos) == 0) {
+            alert("Fiels are required:\n *Email* \n *Password*")
+        } else {
+            alert("The data entered are:\n" + JSON.stringify(validaciones.correctos));
+        }
 }
-

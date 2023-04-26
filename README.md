@@ -1,12 +1,14 @@
 # Become a Sofware Professional 2023
 
 ### Table of Contents
-1. [About The Proyect](#project)
-2. [Week 01](#week-01)
-3. [Week 02](#week-02)
-4. [Week 03](#week-03)
-5. [Week 04](#week-04)
-6. [Week 05](#week-05)
+0. [About The Proyect](#project)
+1. [Week 01](#week-01)
+2. [Week 02](#week-02)
+3. [Week 03](#week-03)
+4. [Week 04](#week-04)
+5. [Week 05](#week-05)
+6. [Week 05](#week-06)
+
 <br>
 <br>
 <h2 id="project"> 🚀 About The Project </h2>
@@ -62,7 +64,22 @@ This week I worked with my new friend JavaScript, we spent the whole week solvin
 The objective of this week was to understand the logic of programming with JavaScript to start applying operation to the website.
 
 ### 🛠 Technologies: JavaScript
-<h3>Github Pages: <a href="https://lautarovercellini.github.io/BaSP-M2023/Week-05/index.html">Cick here</a></h3>
+<h3>Github Pages:<a href="https://lautarovercellini.github.io/BaSP-M2023/Week-05/index.html">Cick here</a></h3>
+<br>
+<br>
+<h2 id="week-06">👩‍💻 Week 06</h2>
+<br>
+And now, we started apply Javascript to our website!
+This week the project was based on working with the different forms, both the Login and the Sign-up. The work was focused on validating the different fields of said forms, controlling differents specifications that the tutors gave us.
+For example, one of the validations that we had to check was the name. This field could not contain numbers and the length must be greater than 3 characters.
+The email must be in a valid format, contain @ and after the "." must have between 2 and 3 characters.
+All the validations were implemented with javascript, where if an error occurs, manipulating the DOM, different alerts are generated to the corresponding fields.
+It was a very difficult week, where understanding how to apply logic to different functions can be almost impossible in some cases. The bootcamp forces you to get out of your comfort zone, look for different ways of do the work and, above all, can to transform the information acquired into knowledge.
+
+On the updated Mega Rocket Gym website, you can navigate through the different links of the sidebar.
+
+### 🛠 Technologies: JavaScript
+<h3>Github Pages:<a href=https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/index.html>Click here</a></h3>
 <br>
 <br>
 Author: Lautaro Vercellini

@@ -1,13 +1,13 @@
 # Become a Sofware Professional 2023
 
 ### Table of Contents
-0. [About The Proyect](#project)
-1. [Week 01](#week-01)
-2. [Week 02](#week-02)
-3. [Week 03](#week-03)
-4. [Week 04](#week-04)
-5. [Week 05](#week-05)
-6. [Week 05](#week-06)
+[About The Project](#project)
+[Week 01](#week-01)
+[Week 02](#week-02)
+[Week 03](#week-03)
+[Week 04](#week-04)
+[Week 05](#week-05)
+[Week 06](#week-06)
 
 <br>
 <br>

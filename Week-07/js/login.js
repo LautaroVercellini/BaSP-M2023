@@ -85,6 +85,20 @@ submitBottom.onclick = function(e) {
         } else if (Object.keys(validaciones.correctos) == 0) {
             alert("Fiels are required:\n *Email* \n *Password*")
         } else {
-            alert("The data entered are:\n" + JSON.stringify(validaciones.correctos, null, "\n"));
-        }
-}
+            var params = new URLSearchParams();
+            params.append("email", email.value);
+            params.append("password", psw.value);
+            var url = "https://api-rest-server.vercel.app/login" + "?" + params.toString();
+
+        fetch(url)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            alert("The request was successful.\nData are entered: \n" + JSON.stringify(data, null, "\n"));
+        })
+        .catch(function(error) {
+            alert("There was an error:\n" + error.message);
+        });
+    }
+};

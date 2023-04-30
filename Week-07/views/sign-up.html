@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sign-Up Mega Rocket Gym</title>
+      <meta name="description" content="Login of Mega Rocket Gym">
+      <link rel="stylesheet" href="../css/reset.css">
+      <link rel="stylesheet" href="../css/header.css">
+      <link rel="stylesheet" href="../css/sign-up.css">
+      <link rel="stylesheet" href="../css/common.css">
+      <script defer src="../js/sign-up.js"></script>
+      <link rel="icon" href="../../Assets/Images/radium-rocket.png" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../../Assets/Images/radium-rocket-logo.png" alt="Logo Rocket">
+        <div>
+          <h1>THE BEST GYM</h1>
+          <p>MEGA ROCKET S.A</p>
+        </div>
+        <img class="icon-menu" src="../../Assets/Images/menu-icon.png" alt="menu-icon">
+    </header>
+    <main>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/login.html">Log-In</a></li>
+            <li><a href="https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/sign-up.html">Sign-Up</a></li>
+            <li><a href="https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/index.html">Home</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <form action="" name="form-sing-up" autocomplete="on" >
+          <h2>Create Account</h2>
+          <p id="required" class="field-error">fields are required</p>
+          <div class="container-form-names">
+            <div class="form-name">
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" value="Name" />
+              <p id="incorrectName" class="field-error">only letters and min 3 characters</p>
+            </div>
+            <div class="form-surname">
+              <label for="surname">Surname</label>
+              <input id="surname" type="text" name="surname" value="Surname">
+              <p id="incorrectSurname" class="field-error">only letters and min 3 characters</p>
+            </div>
+          </div>
+          <div class="container-form-idnumber-birthdate">
+            <div class="form-id-number">
+              <label for="idNumber">Id Number</label>
+              <input id="idNumber" type="text" name="id-number" value="Id Number">
+              <p id="incorrectIdNumber" class="field-error">only numbers and min 7 characters</p>
+            </div>
+            <div class="form-birthdate">
+              <label for="birthDate">Birthdate</label>
+              <input id="birthDate" type="date" name="birthdate">
+              <p id="incorrectBirthDate" class="field-error">invalid year</p>
+            </div>
+          </div>
+          <div class="container-form-phone-adress">
+            <div class="form-phone">
+              <label for="phone">Phone</label>
+              <input id="phone" type="text" name="phone" value="Phone">
+              <p id="incorrectPhone" class="field-error">only numbers and min 10 characters</p>
+            </div>
+            <div class="form-adress">
+              <label for="adress">Adress</label>
+              <input id="adress" type="text" name="adress" value="Adress"/>
+              <p id="incorrectAdress" class="field-error">min 5 letters, numbers and a space</p>
+            </div>
+          </div>
+          <div class="container-form-location-postalcode">
+            <div class="form-location">
+              <label for="location">Location</label>
+              <input id="location" type="text" name="location" value="Location">
+              <p id="incorrectLocation" class="field-error">min 3 characters</p>
+            </div>
+            <div class="form-postalcode">
+              <label for="postalCode">Postal Code</label>
+              <input id="postalCode" type="text" name="postal-code" value="Postal Code"/>
+              <p id="incorrectPostalCode" class="field-error">only numbers between 4 and 5 characters</p>
+            </div>
+          </div>
+          <div class="container-form-email">
+            <div class="form-email">
+              <label for="email">Email</label>
+              <input id="email" type="text" name="email" value="Email">
+              <p id="incorrectEmail" class="field-error">invalid format email</p>
+            </div>
+          </div>
+          <div class="container-form-passwords">
+            <div class="form-password">
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password" value="Password"/>
+              <p id="incorrectPassword" class="field-error">min 8 characters. numbers and letters</p>
+            </div>
+            <div class="form-password-repeat">
+              <label for="passwordRepeat">Repeat Password</label>
+              <input id="passwordRepeat" type="password" name="password" value="Password"/>
+              <p id="incorrectRepeatPassword" class="field-error">password doesn't match</p>
+            </div>
+          </div>
+          <div class="memberships">
+            <div class="select-only-classes">
+              <input type="radio" name="memberships" value="only-classes">
+              <label for="form-sing-up">Only Classes</label><label class="price" for="form-info">$9.99</label>
+            </div>
+            <div class="select-only-classic">
+              <input type="radio" name="memberships" value="only-classic">
+              <label for="form-sing-up">Only Classic</label><label class="price" for="form-info">$19.99</label>
+            </div>
+            <div class="select-best-black">
+              <input type="radio" name="memberships" value="best-black">
+              <label for="form-sing-up">Best Black</label><label class="price" for="form-info">$39.99</label>
+            </div>
+          </div>
+          <input id="submit-buttom" class="submit-bottom"type="submit" value="Register">
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

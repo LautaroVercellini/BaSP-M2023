@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Mega Rocket Gym</title>
+        <meta name="description" content="Login of Mega Rocket Gym">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <script defer src="../js/login.js"></script>
+        <link rel="icon" href="../../Assets/Images/radium-rocket.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <img class="logo" src="../../Assets/Images/radium-rocket-logo.png" alt="Logo Rocket">
+        <div>
+          <h1>THE BEST GYM</h1>
+          <p>MEGA ROCKET S.A</p>
+        </div>
+        <img class="icon-menu" src="../../Assets/Images/menu-icon.png" alt="menu-icon">
+      </header>
+      <main>
+        <aside>
+          <nav>
+            <ul>
+              <li><a href="https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/login.html">Log-In</a></li>
+              <li><a href="https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/sign-up.html">Sign-Up</a></li>
+              <li><a href="https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/index.html">Home</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <div class="main-content">
+          <form action="" name="form-info" >
+            <h2>Log-In</h2>
+            <p id="required" class="field-error">*Fields are required</p>
+            <div class="labels">
+              <label for="email">Email</label>
+              <input id="email" type="text" name="email" value="Email">
+              <p id="incorrectEmail" class="field-error">invalid format email</p>
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password" value="Password"/>
+              <p id="incorrectPassword" class="field-error">min 8 characters. numbers and letters</p>
+            </div>
+            <div class="remember-forgot">
+              <label class="check-remember"><input type="checkbox">Remember me</label>
+              <p><a href="forgot-psw">Forgot your password?</a></p>
+            </div>
+            <input id="submit-buttom" class="submit-bottom"type="submit" value="Login">
+          </form>
+        </div>
+      </main>
+    </body>
+    </html>

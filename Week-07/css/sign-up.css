@@ -1,0 +1,193 @@
+aside {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 10% 10%;
+    border: 0.1em solid black;
+    background-color: #E6E6EC;
+}
+
+form h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0em;
+    color: #FFFFFF;
+    background-color: #373867;
+    font-weight: 400;
+    font-size: 1.3em;
+    align-self: center;
+}
+
+[class^="container-form-"] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+[class^="form-"] {
+    width: 80%;
+}
+
+[class^="form-"] label {
+    display: flex;
+    align-self: flex-start;
+    color: #373867;
+    margin-top: 2em;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+[class^="form-"] input {
+    width: 100%;
+    padding: 0.2em;
+    color:  #373867;
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.memberships {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[class^="select-"] {
+    display: flex;
+    padding: 0.5em;
+    margin-top: 2em;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    width: 80%;
+}
+
+[class^="select-"] input {
+    width: 2em;
+}
+
+[class^="select-"] label {
+    display: flex;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.price {
+    padding-left: 6em;
+}
+
+.submit-bottom {
+    margin: 5% 0 5% 0;
+    width:30%;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color:#373867;
+    opacity: 1;
+    font-size: 1em;
+}
+
+.red-border {
+    border: 2px solid #EB2222;
+}
+
+.field-error {
+    display: none;
+    padding: 0.2em 0.3em;
+    background-color: #FF494980;
+    border-radius: 10px;
+    color:  #EB2222;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+    }
+
+    .main-content {
+        width: 80%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 20%;
+        background-color: #373867;
+    }
+
+    aside img {
+        width: 10em;
+        height: 10em;
+    }
+
+    nav {
+        position: fixed;
+        margin-top: 10em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 4em;
+    }
+
+    nav li {
+        padding: 3em 0em 0em 0em;
+        list-style: none;
+    }
+
+    nav li:nth-child(3) {
+        padding-bottom: 2em;
+    }
+
+    nav a {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 1.8em;
+        line-height: 0.8em;
+        text-decoration: none;
+    }
+
+    [class^="container"] {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 2em;
+    }
+
+    [class^="form-"] {
+        margin-right: 2em;
+    }
+
+    .form-email {
+        width:45%;
+    }
+
+    .memberships {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 0.7em;
+    }
+
+    [class^="select-"] {
+        width: 30%;
+        margin-top: 3em;
+        margin-right: 0.3em;
+    }
+
+    .price {
+        padding-left: 4em;
+    }
+}

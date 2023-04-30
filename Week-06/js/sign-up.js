@@ -37,23 +37,49 @@ function containsSpecialChar(value) {
     return false;
 }
 
-function validateAdress(value){
-    var space = value.search(" ");
-    if (space === -1) {
-        return false;
-    } else if (space !== -1) {
-        var lastChar = value.length -1;
-        var fisrtWord = value.substring(0,space);
-        var secondWord = value.substring(space+1, lastChar);
-        } if (containsSpecialChar(fisrtWord) || containsSpecialChar(secondWord)){
-            return false;
-        } else {
-            return true;
+function deleteSpaces(value){
+    var arrayWoutSpaces = [];
+    for (i = 0; i < value.length; i++) {
+        if (value[i].trim() !== ""){
+            arrayWoutSpaces.push(value[i]);
         }
+    }
+    return arrayWoutSpaces;
+};
+
+function validateAdress(value){
+    var newWords = value.split(" ");
+    var words = deleteSpaces(newWords);
+    if (words.length === 1) {
+        return false;
+    } else if (words.length === 2) {
+        var firstWord = words[0].trim().toString();
+        var secondWord = words[1].trim().toString();
+        if  (containsSpecialChar(firstWord) || containsSpecialChar(secondWord)){
+            return false;
+        } else if   (((containsLetter(firstWord)) && containsNumber(secondWord)) ||
+                    (containsNumber(firstWord) && containsLetter(secondWord))){
+                    return true;
+        } return false;
+    } else if (words.length === 3) {
+        var firstWord = words[0].trim().toString();
+        var secondWord = words[1].trim().toString();
+        var thirdWord = words[2].trim().toString();
+        if ((containsSpecialChar(firstWord)) || (containsSpecialChar(secondWord)) || (containsSpecialChar(thirdWord))){
+            return false;
+        } else if   (((containsLetter(firstWord)) && containsLetter(secondWord)) && containsNumber(thirdWord) ||
+                    (containsNumber(firstWord) && containsLetter(secondWord)) && containsLetter(thirdWord)){
+                    return true;
+        } return false;
+    } else if (words.length > 3){
+        return false;
+    }
 }
 
+
+
 var nameSingUp = document.getElementById("name");
-var incorrectName = document.getElementById("incorrect-name-singup")
+var incorrectName = document.getElementById("incorrectName")
 var required = document.getElementById("required")
 
 nameSingUp.onblur = function() {
@@ -61,11 +87,11 @@ nameSingUp.onblur = function() {
     if (name.length == 0) {
         required.style.display="block";
         nameSingUp.classList.add("red-border")
-        validaciones.incorrectos.name = "Name is empty";
+        validaciones.incorrectos.name = "Can't be empty";
     } else if (containsNumber(name) == true || (name.length < 3)) {
         incorrectName.style.display="block";
         nameSingUp.classList.add("red-border");
-        validaciones.incorrectos.name = "Name have numbers or is too short";
+        validaciones.incorrectos.name = "Contains numbers or less than 3 characters";
     } else {
         validaciones.correctos.name= name;
     }
@@ -81,18 +107,18 @@ nameSingUp.onfocus = function() {
 }
 
 var surnameSingUp = document.getElementById("surname");
-var incorrectSurname = document.getElementById("incorrect-surname-singup")
+var incorrectSurname = document.getElementById("incorrectSurname")
 
 surnameSingUp.onblur = function() {
     var surname = surnameSingUp.value;
     if (surname.length == 0) {
         required.style.display="block";
         surnameSingUp.classList.add("red-border")
-        validaciones.incorrectos.surname = "Surname is empty";
+        validaciones.incorrectos.surname = "Can't be empty";
     } else if (containsNumber(surname) == true || (surname.length < 3)) {
         incorrectSurname.style.display="block";
         surnameSingUp.classList.add("red-border");
-        validaciones.incorrectos.surname = "Surame have numbers or is too short";
+        validaciones.incorrectos.surname = "Contains numbers or less than 3 characters";
     } else {
         validaciones.correctos.surname = surname;
     }
@@ -108,18 +134,18 @@ surnameSingUp.onfocus = function() {
 }
 
 
-var idNumber = document.getElementById("id-number");
-var incorrectIdNumber = document.getElementById("incorrect-idNumber")
+var idNumber = document.getElementById("idNumber");
+var incorrectIdNumber = document.getElementById("incorrectIdNumber")
 
 idNumber.onblur = function() {
     if (idNumber.value.length == 0) {
         required.style.display="block";
         idNumber.classList.add("red-border")
-        validaciones.incorrectos.IdNumber = "Id Number is empty";
+        validaciones.incorrectos.IdNumber = "Can't be empty";
     } else if (containsLetter(idNumber.value) == true || idNumber.value.length < 7){
         incorrectIdNumber.style.display="block";
         idNumber.classList.add("red-border")
-        validaciones.incorrectos.IdNumber = "Id Number have letters or is too short";
+        validaciones.incorrectos.IdNumber = "Contains letters or less than 7 characters";
     } else {
         validaciones.correctos.IdNumber = idNumber.value;
     }
@@ -134,46 +160,46 @@ idNumber.onfocus = function () {
     delete validaciones.correctos.IdNumber;
 }
 
-var date = document.getElementById("birthdate");
-var incorrectbirthdate = document.getElementById("incorrect-birthdate")
+var date = document.getElementById("birthDate");
+var incorrectBirthDate = document.getElementById("incorrectBirthDate")
 
 date.onblur = function () {
     var validateDate = date.value.split("-", 3);
     if (date.value.length == 0) {
         required.style.display="block";
         date.classList.add("red-border")
-        validaciones.incorrectos["Birthdate"] = "Birthdate is empty";
+        validaciones.incorrectos["Birth Date"] = "Can't be empty";
     } else if (validateDate[0] > 2023){
-        incorrectbirthdate.style.display="block";
-        validaciones.incorrectos["Birthdate"] = "Invalid year";
+        incorrectBirthDate.style.display="block";
+        validaciones.incorrectos["Birth Date"] = "Invalid year";
     } else {
         validateDate.reverse()
         var dateString = validateDate[0] +"/"+validateDate[1] +"/"+validateDate[2];
-        validaciones.correctos["Birthdate"] = dateString;
+        validaciones.correctos["Birth Date"] = dateString;
     }
 }
 
 date.onfocus = function () {
     required.style.display="none";
-    incorrectbirthdate.style.display="none";
+    incorrectBirthDate.style.display="none";
     date.classList.remove("red-border");
     date.value = "";
-    delete validaciones.incorrectos["Birthdate"];
-    delete validaciones.correctos["Birthdate"];
+    delete validaciones.incorrectos["Birth Date"];
+    delete validaciones.correctos["Birth Date"];
 }
 
 var phone = document.getElementById("phone");
-var incorrectPhone = document.getElementById("incorrect-phone")
+var incorrectPhone = document.getElementById("incorrectPhone")
 
 phone.onblur = function() {
     if (phone.value.length == 0) {
         required.style.display="block";
         phone.classList.add("red-border");
-        validaciones.incorrectos.Phone = "Phone is empty";
+        validaciones.incorrectos.Phone = "Can't be empty";
     } else if (containsLetter(phone.value) == true || phone.value.length < 10){
         incorrectPhone.style.display="block";
         phone.classList.add("red-border")
-        validaciones.incorrectos.Phone = "Phone can't contain letter or is too short";
+        validaciones.incorrectos.Phone = "Contains letters or less than 10 characters";
     } else {
         validaciones.correctos.Phone = phone.value;
     }
@@ -189,17 +215,18 @@ phone.onfocus = function () {
 }
 
 var adress = document.getElementById("adress");
-var incorrectAdress = document.getElementById("incorrect-adress");
+var incorrectAdress = document.getElementById("incorrectAdress");
 
 adress.onblur = function () {
     if (adress.value.length == 0) {
         required.style.display="block";
         adress.classList.add("red-border");
-        validaciones.incorrectos.Adress = "Adress is empty";
+        validaciones.incorrectos.Adress = "Can't be empty";
     } else if (validateAdress(adress.value) == false || (adress.value.length <= 5)) {
         incorrectAdress.style.display="block";
         adress.classList.add("red-border");
-        validaciones.incorrectos.Adress = "Adress is empty";
+        validaciones.incorrectos.Adress =
+        "Max two words and numbering. Can't contains only letters or numbers and specials characters";
     } else {
         validaciones.correctos.Adress = adress.value;
     }
@@ -216,45 +243,45 @@ adress.onfocus = function () {
 
 
 
-var locacion = document.getElementById("locacion");
-var incorrectLocacion = document.getElementById("incorrect-locacion");
+var locations = document.getElementById("location");
+var incorrectLocations = document.getElementById("incorrectLocation");
 
-locacion.onblur = function () {
-    if (locacion.value.length == 0) {
+locations.onblur = function () {
+    if (locations.value.length == 0) {
         required.style.display="block";
-        locacion.classList.add("red-border")
-        validaciones.incorrectos.Location = "Location is empty";
-    } else if (containsSpecialChar(locacion.value) == true || (locacion.value.length < 3)) {
-        incorrectLocacion.style.display="block";
-        locacion.classList.add("red-border");
-        validaciones.incorrectos.Location = "Can't contain special characters or is too short";
+        locations.classList.add("red-border")
+        validaciones.incorrectos.Location = "Can't be empty";
+    } else if (containsSpecialChar(locations.value) == true || (locations.value.length < 3)) {
+        incorrectLocations.style.display="block";
+        location.classList.add("red-border");
+        validaciones.incorrectos.Location = "Can't contains specials characters and min 3 characters";
     } else {
-        validaciones.correctos.Location = locacion.value;
+        validaciones.correctos.Location = location.value;
     }
 }
 
-locacion.onfocus = function () {
-    locacion.classList.remove("red-border");
-    incorrectLocacion.style.display="none";
+locations.onfocus = function () {
+    locations.classList.remove("red-border");
+    incorrectLocations.style.display="none";
     required.style.display="none";
-    locacion.value = "";
+    locations.value = "";
     delete validaciones.incorrectos.Location;
     delete validaciones.correctos.Location
 }
 
-var postalCode = document.getElementById("postal-code");
-var incorrectPostalCode = document.getElementById("incorrect-postalCode");
+var postalCode = document.getElementById("postalCode");
+var incorrectPostalCode = document.getElementById("incorrectPostalCode");
 
 postalCode.onblur = function () {
     if (postalCode.value.length == 0) {
         required.style.display="block";
         postalCode.classList.add("red-border");
-        validaciones.incorrectos["Postal Code:"] = "Postal Code is empty";
-    } else if (containsLetter(postalCode.value) == true ||
+        validaciones.incorrectos["Postal Code:"] = "Can't be empty";
+    } else if (containsLetter(postalCode.value) ||
     (postalCode.value.length <=3 || postalCode.value.length >=6)) {
         incorrectPostalCode.style.display="block";
         postalCode.classList.add("red-border");
-        validaciones.incorrectos["Postal Code:"] = "Can't contain letters and between 4-5 characters";
+        validaciones.incorrectos["Postal Code:"] = "Can't contains letters and must have between 4-5 numbers";
     } else {
         validaciones.correctos["Postal Code:"] = postalCode.value;
     }
@@ -270,18 +297,18 @@ postalCode.onfocus = function () {
 }
 
 var email = document.getElementById("email");
-var errorEmail = document.getElementById("incorrect-email");
+var incorrectEmail = document.getElementById("incorrectEmail");
 var validEmail =  /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
 
 email.onblur = function() {
     if (email.value == ""){
         required.style.display="block";
         email.classList.add("red-border");
-        validaciones.incorrectos.Email = ": Email is empty";
+        validaciones.incorrectos.Email = "Can't be empty";
     } else if (!validEmail.test(email.value)){
         email.classList.add("red-border");
-        errorEmail.style.display="block";
-        validaciones.incorrectos.Email = "Invalid format email";
+        incorrectEmail.style.display="block";
+        validaciones.incorrectos.Email = "Invalid format";
     }else {
         validaciones.correctos.Email = email.value;
     }
@@ -289,7 +316,7 @@ email.onblur = function() {
 
 email.onfocus = function() {
     email.classList.remove("red-border");
-    errorEmail.style.display="none";
+    incorrectEmail.style.display="none";
     required.style.display="none";
     email.value = "";
     delete validaciones.incorrectos.Email;
@@ -297,19 +324,19 @@ email.onfocus = function() {
 }
 
 var psw = document.getElementById("password");
-var incorrectPsw = document.getElementById("incorrect-password");
+var incorrectPsw = document.getElementById("incorrectPassword");
 
 psw.onblur = function () {
     if (psw.value.length == 0) {
         required.style.display="block";
         psw.classList.add("red-border");
-        validaciones.incorrectos.Password = "Password is empty";
+        validaciones.incorrectos.Password = "Can't be empty";
     } else if (!containsLetter(psw.value) || !containsNumber(psw.value) || psw.value.length < 8) {
         psw.classList.add("red-border");
         incorrectPsw.style.display="block";
-        validaciones.incorrectos.Password = "Must contain letters and numbers";
+        validaciones.incorrectos.Password = "Must contain letters and numbers and more than 7 characters";
     } else {
-        validaciones.correctos.Password = psw.value;
+        validaciones.correctos.Password = "*".repeat(password.value.length);
     }
 }
 
@@ -322,14 +349,14 @@ psw.onfocus = function() {
     delete validaciones.correctos.Password;
 }
 
-var pswRepeat = document.getElementById("password-repeat");
-var incorrectPswRepeat = document.getElementById("incorrect-repeatPassword");
+var pswRepeat = document.getElementById("passwordRepeat");
+var incorrectPswRepeat = document.getElementById("incorrectRepeatPassword");
 
 pswRepeat.onblur = function () {
     if (pswRepeat.value.length == 0) {
         required.style.display="block";
         pswRepeat.classList.add("red-border");
-        validaciones.incorrectos["Password Validation:"] = "Password Validation is empty";
+        validaciones.incorrectos["Password Validation:"] = "Can't be empty";
     } else if (psw.value !== pswRepeat.value){
         psw.classList.add("red-border");
         incorrectPswRepeat.style.display="block";
@@ -352,10 +379,10 @@ var submitBottom = document.querySelector("#submit-buttom");
 submitBottom.onclick = function(e) {
     e.preventDefault();
         if (Object.keys(validaciones.incorrectos).length > 0) {
-            alert("The fields are wrong:\n" + JSON.stringify(validaciones.incorrectos));
-        } else if (Object.keys(validaciones.correctos) == 0) {
+            alert("The fields are wrong:" + JSON.stringify(validaciones.incorrectos, null, "\n"));
+        } else if ((Object.keys(validaciones.correctos) == 0) || (Object.keys(validaciones.incorrectos) == 0)) {
             alert("Complete all fields to send");
         } else {
-            alert("The data entered are:\n" + JSON.stringify(validaciones.correctos));
+            alert("The data entered are:\n" + JSON.stringify(validaciones.correctos, null, "\n"));
         }
 }

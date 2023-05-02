@@ -80,11 +80,11 @@ psw.onfocus = function() {
 var submitBottom = document.querySelector("#submit-buttom");
 submitBottom.onclick = function(e) {
     e.preventDefault();
-        if (Object.keys(validaciones.incorrectos).length > 0) {
-            alert("The fields are wrong:" + JSON.stringify(validaciones.incorrectos, null, "\n"));
-        } else if (Object.keys(validaciones.correctos) == 0) {
-            alert("Fiels are required:\n *Email* \n *Password*")
-        } else {
-            alert("The data entered are:\n" + JSON.stringify(validaciones.correctos, null, "\n"));
-        }
+    if (Object.keys(validaciones.incorrectos).length > 0) {
+        alert("The fields are wrong:" + JSON.stringify(validaciones.incorrectos, null, "\n"));
+    } else if (Object.keys(validaciones.correctos) == 0) {
+        alert("Fiels are required:\n *Email* \n *Password*")
+    } else {
+        alert("The data entered are:\n" + JSON.stringify(validaciones.correctos, null, "\n"));
+    }
 }

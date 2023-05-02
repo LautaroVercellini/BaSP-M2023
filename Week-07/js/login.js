@@ -88,17 +88,21 @@ submitBottom.onclick = function(e) {
             var params = new URLSearchParams();
             params.append("email", email.value);
             params.append("password", psw.value);
-            var url = "https://api-rest-server.vercel.app/login" + "?" + params.toString();
+            var request = "https://api-rest-server.vercel.app/login" + "?" + params.toString();
 
-        fetch(url)
+        fetch(request)
         .then(function(response) {
             return response.json();
         })
         .then(function(data) {
-            alert("The request was successful.\nData are entered: \n" + JSON.stringify(data, null, "\n"));
+            if (data.success){
+                alert("The request was successful.\n" + JSON.stringify(data.msg));
+        }   else {
+                throw new Error (data.msg);
+        }
         })
-        .catch(function(error) {
-            alert("There was an error:\n" + error.message);
+        .catch(function(errors) {
+            alert("There was an error:\n" + errors.message);
         });
     }
 };

@@ -76,6 +76,12 @@ function validateAdress(value){
     }
 }
 
+function transformDate(date){
+    var dateWrong = date.split("-", 3);
+    var dateOk = dateWrong[1] + "/" + dateWrong[2] + "/" + dateWrong[0];
+    return dateOk;
+};
+
 
 
 var nameSingUp = document.getElementById("name");
@@ -253,7 +259,7 @@ locations.onblur = function () {
         validaciones.incorrectos.Location = "Can't be empty";
     } else if (containsSpecialChar(locations.value) == true || (locations.value.length < 3)) {
         incorrectLocations.style.display="block";
-        location.classList.add("red-border");
+        locations.classList.add("red-border");
         validaciones.incorrectos.Location = "Can't contains specials characters and min 3 characters";
     } else {
         validaciones.correctos.Location = location.value;
@@ -380,9 +386,63 @@ submitBottom.onclick = function(e) {
     e.preventDefault();
         if (Object.keys(validaciones.incorrectos).length > 0) {
             alert("The fields are wrong:" + JSON.stringify(validaciones.incorrectos, null, "\n"));
-        } else if ((Object.keys(validaciones.correctos) == 0) || (Object.keys(validaciones.incorrectos) == 0)) {
+        } else if ((Object.keys(validaciones.correctos) == 0) && (Object.keys(validaciones.incorrectos) == 0)) {
             alert("Complete all fields to send");
         } else {
-            alert("The data entered are:\n" + JSON.stringify(validaciones.correctos, null, "\n"));
-        }
+                var params = new URLSearchParams();
+                params.append("name", nameSingUp.value);
+                params.append("lastName", surnameSingUp.value);
+                params.append("dni", idNumber.value);
+                params.append("dob", transformDate(date.value));
+                params.append("phone", phone.value);
+                params.append("address", adress.value);
+                params.append("city", locations.value);
+                params.append("zip", postalCode.value);
+                params.append("email", email.value);
+                params.append("password", psw.value);
+                var request = "https://api-rest-server.vercel.app/signup" + "?" + params.toString();
+
+                fetch(request)
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    if (data.success) {
+                    alert("The request was successful.\n" + JSON.stringify(data.msg));
+                    localStorage.setItem("Name", nameSingUp.value);
+                    localStorage.setItem("Surname", surnameSingUp.value);
+                    localStorage.setItem("Id Number", idNumber.value);
+                    localStorage.setItem("Birth Date", date.value);
+                    localStorage.setItem("Phone", phone.value);
+                    localStorage.setItem("Address", adress.value);
+                    localStorage.setItem("City", locations.value);
+                    localStorage.setItem("Postal Code", postalCode.value);
+                    localStorage.setItem("Email", email.value);
+                    localStorage.setItem("Password", password.value);
+                } else {
+                    var errorMsg = "";
+                    for (var i = 0; i < data.errors.length; i++) {
+                        errorMsg += data.errors[i].msg + "\n";
+                    }
+                    alert("There were errors with your submission:\n" + errorMsg);
+                    }
+                })
+                .catch(function(error) {
+                    alert("There was an error:\n" + error.msg);
+                })
+            }
+};
+
+window.onload = function() {
+    nameSingUp.value = localStorage.getItem("Name");
+    surnameSingUp.value = localStorage.getItem("Surname");
+    idNumber.value = localStorage.getItem("Id Number");
+    date.value = localStorage.getItem("Birth Date");
+    phone.value = localStorage.getItem("Phone");
+    adress.value = localStorage.getItem("Address");
+    locations.value = localStorage.getItem("City");
+    postalCode.value = localStorage.getItem("Postal Code");
+    email.value = localStorage.getItem("Email");
+    psw.value = localStorage.getItem("Password");
+    pswRepeat.value = localStorage.getItem("Password");
 }

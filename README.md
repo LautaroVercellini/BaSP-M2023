@@ -1,14 +1,14 @@
 # Become a Sofware Professional 2023
 
 ### Table of Contents
-[About The Project](#project)
-[Week 01](#week-01)
-[Week 02](#week-02)
-[Week 03](#week-03)
-[Week 04](#week-04)
-[Week 05](#week-05)
-[Week 06](#week-06)
-[Week 07](#week-07)
+:black_medium_small_square:[About The Project](#project)<br>
+:black_medium_small_square:[Week 01](#week-01)<br>
+:black_medium_small_square:[Week 02](#week-02)<br>
+:black_medium_small_square:[Week 03](#week-03)<br>
+:black_medium_small_square:[Week 04](#week-04)<br>
+:black_medium_small_square:[Week 05](#week-05)<br>
+:black_medium_small_square:[Week 06](#week-06)<br>
+:black_medium_small_square:[Week 07](#week-07)<br>
 
 <br>
 <br>
@@ -65,7 +65,7 @@ This week I worked with my new friend JavaScript, we spent the whole week solvin
 The objective of this week was to understand the logic of programming with JavaScript to start applying operation to the website.
 
 ### 🛠 Technologies: JavaScript
-<h3>Github Pages:<a href="https://lautarovercellini.github.io/BaSP-M2023/Week-05/index.html">Cick here</a></h3>
+<h3>Github Pages:<a href="https://lautarovercellini.github.io/BaSP-M2023/Week-05/index.html"> Cick here</a></h3>
 <br>
 <br>
 <h2 id="week-06">👩‍💻 Week 06</h2>
@@ -80,7 +80,7 @@ It was a very difficult week, where understanding how to apply logic to differen
 On the updated Mega Rocket Gym website, you can navigate through the different links of the sidebar.
 
 ### 🛠 Technologies: JavaScript
-<h3>Github Pages:<a href=https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/index.html>Click here</a></h3>
+<h3>Github Pages:<a href=https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/index.html> Click here</a></h3>
 <br>
 <br>
 <h2 id="week-07">👩‍💻 Week 07</h2>
@@ -108,6 +108,6 @@ During these days we learned about many topics among which are:
 <br>
 <br>
 ### 🛠 Technologies: JavaScript
-<h3>Github Pages:<a href=https://lautarovercellini.github.io/BaSP-M2023/Week-07/views/index.html>Click here</a></h3>
+<h3>Github Pages:<a href=https://lautarovercellini.github.io/BaSP-M2023/Week-07/views/index.html> Click here</a></h3>
 <br>
 Author: Lautaro Vercellini

@@ -8,6 +8,7 @@
 [Week 04](#week-04)
 [Week 05](#week-05)
 [Week 06](#week-06)
+[Week 07](#week-07)
 
 <br>
 <br>
@@ -81,5 +82,32 @@ On the updated Mega Rocket Gym website, you can navigate through the different l
 ### 🛠 Technologies: JavaScript
 <h3>Github Pages:<a href=https://lautarovercellini.github.io/BaSP-M2023/Week-06/views/index.html>Click here</a></h3>
 <br>
+<br>
+<h2 id="week-07">👩‍💻 Week 07</h2>
+<br>
+<br>
+This week I continued working with JavaScript, but this time a little deeper. The weekly project was based on making a request to the server, using an API that the tutors gave us, to which the data entered by the user had to be concatenated as queryParams. If the data entered was correct, the API returned a successful response, otherwise an error message was returned with the information that the failed field should contain. Also, in the sign-up screen only, in case the API response is successful, the data entered by the user should be stored in localStorage and a function should be created in the window.onload object so that when load the page, the fields are filled with the data already stored.
+<br>
+During these days we learned about many topics among which are:
+<br>
+:black_medium_small_square: What is an API
+<br>
+:black_medium_small_square: Asynchronism in JavaScript
+<br>
+:black_medium_small_square: Call Stack
+<br>
+:black_medium_small_square: Task Queue
+<br>
+:black_medium_small_square: Event Loop
+<br>
+:black_medium_small_square: Callbacks, Callback hell
+<br>
+:black_medium_small_square: Promises
+<br>
+:black_medium_small_square: Creation of cookies and storage of information in SessionStorage and LocalStorage.
+<br>
+<br>
+### 🛠 Technologies: JavaScript
+<h3>Github Pages:<a href=https://lautarovercellini.github.io/BaSP-M2023/Week-07/views/index.html>Click here</a></h3>
 <br>
 Author: Lautaro Vercellini

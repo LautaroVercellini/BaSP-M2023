@@ -1,7 +1,7 @@
 var validaciones = {
     correctos: {},
     incorrectos: {}
-}
+};
 
 function containsLetter(value) {
     for (var i = 0; i < value.length; i++) {
@@ -11,7 +11,7 @@ function containsLetter(value) {
       }
     }
     return false;
-}
+};
 
 function containsNumber(value) {
     for (var i = 0; i < value.length; i++) {
@@ -21,7 +21,7 @@ function containsNumber(value) {
       }
     }
     return false;
-}
+};
 
 
 function containsSpecialChar(value) {
@@ -35,7 +35,7 @@ function containsSpecialChar(value) {
         }
     }
     return false;
-}
+};
 
 function deleteSpaces(value){
     var arrayWoutSpaces = [];
@@ -74,7 +74,7 @@ function validateAdress(value){
     } else if (words.length > 3){
         return false;
     }
-}
+};
 
 function transformDate(date){
     var dateWrong = date.split("-", 3);
@@ -101,7 +101,7 @@ nameSingUp.onblur = function() {
     } else {
         validaciones.correctos.name= name;
     }
-}
+};
 
 nameSingUp.onfocus = function() {
     nameSingUp.classList.remove("red-border");
@@ -110,7 +110,7 @@ nameSingUp.onfocus = function() {
     nameSingUp.value = "";
     delete validaciones.incorrectos.name;
     delete validaciones.correctos.name;
-}
+};
 
 var surnameSingUp = document.getElementById("surname");
 var incorrectSurname = document.getElementById("incorrectSurname")
@@ -128,7 +128,7 @@ surnameSingUp.onblur = function() {
     } else {
         validaciones.correctos.surname = surname;
     }
-}
+};
 
 surnameSingUp.onfocus = function() {
     surnameSingUp.classList.remove("red-border");
@@ -137,7 +137,7 @@ surnameSingUp.onfocus = function() {
     surnameSingUp.value = "";
     delete validaciones.incorrectos.surname;
     delete validaciones.incorrectos.surname;
-}
+};
 
 
 var idNumber = document.getElementById("idNumber");
@@ -155,7 +155,7 @@ idNumber.onblur = function() {
     } else {
         validaciones.correctos.IdNumber = idNumber.value;
     }
-}
+};
 
 idNumber.onfocus = function () {
     idNumber.classList.remove("red-border");
@@ -164,7 +164,7 @@ idNumber.onfocus = function () {
     idNumber.value = "";
     delete validaciones.incorrectos.IdNumber;
     delete validaciones.correctos.IdNumber;
-}
+};
 
 var date = document.getElementById("birthDate");
 var incorrectBirthDate = document.getElementById("incorrectBirthDate")
@@ -183,7 +183,7 @@ date.onblur = function () {
         var dateString = validateDate[0] +"/"+validateDate[1] +"/"+validateDate[2];
         validaciones.correctos["Birth Date"] = dateString;
     }
-}
+};
 
 date.onfocus = function () {
     required.style.display="none";
@@ -192,7 +192,7 @@ date.onfocus = function () {
     date.value = "";
     delete validaciones.incorrectos["Birth Date"];
     delete validaciones.correctos["Birth Date"];
-}
+};
 
 var phone = document.getElementById("phone");
 var incorrectPhone = document.getElementById("incorrectPhone")
@@ -209,7 +209,7 @@ phone.onblur = function() {
     } else {
         validaciones.correctos.Phone = phone.value;
     }
-}
+};
 
 phone.onfocus = function () {
     phone.classList.remove("red-border");
@@ -218,7 +218,7 @@ phone.onfocus = function () {
     phone.value = "";
     delete validaciones.incorrectos.Phone;
     delete validaciones.correctos.Phone
-}
+};
 
 var adress = document.getElementById("adress");
 var incorrectAdress = document.getElementById("incorrectAdress");
@@ -236,7 +236,7 @@ adress.onblur = function () {
     } else {
         validaciones.correctos.Adress = adress.value;
     }
-}
+};
 
 adress.onfocus = function () {
     adress.classList.remove("red-border");
@@ -245,7 +245,7 @@ adress.onfocus = function () {
     adress.value = "";
     delete validaciones.incorrectos.Adress;
     delete validaciones.correctos.Adress;
-}
+};
 
 
 
@@ -264,7 +264,7 @@ locations.onblur = function () {
     } else {
         validaciones.correctos.Location = location.value;
     }
-}
+};
 
 locations.onfocus = function () {
     locations.classList.remove("red-border");
@@ -273,7 +273,7 @@ locations.onfocus = function () {
     locations.value = "";
     delete validaciones.incorrectos.Location;
     delete validaciones.correctos.Location
-}
+};
 
 var postalCode = document.getElementById("postalCode");
 var incorrectPostalCode = document.getElementById("incorrectPostalCode");
@@ -291,7 +291,7 @@ postalCode.onblur = function () {
     } else {
         validaciones.correctos["Postal Code:"] = postalCode.value;
     }
-}
+};
 
 postalCode.onfocus = function () {
     postalCode.classList.remove("red-border");
@@ -300,7 +300,7 @@ postalCode.onfocus = function () {
     postalCode.value = "";
     delete validaciones.incorrectos["Postal Code:"];
     delete validaciones.correctos["Postal Code:"];
-}
+};
 
 var email = document.getElementById("email");
 var incorrectEmail = document.getElementById("incorrectEmail");
@@ -318,7 +318,7 @@ email.onblur = function() {
     }else {
         validaciones.correctos.Email = email.value;
     }
-}
+};
 
 email.onfocus = function() {
     email.classList.remove("red-border");
@@ -327,7 +327,7 @@ email.onfocus = function() {
     email.value = "";
     delete validaciones.incorrectos.Email;
     delete validaciones.correctos.Email;
-}
+};
 
 var psw = document.getElementById("password");
 var incorrectPsw = document.getElementById("incorrectPassword");
@@ -344,7 +344,7 @@ psw.onblur = function () {
     } else {
         validaciones.correctos.Password = "*".repeat(password.value.length);
     }
-}
+};
 
 psw.onfocus = function() {
     psw.classList.remove("red-border");
@@ -353,7 +353,7 @@ psw.onfocus = function() {
     psw.value = "";
     delete validaciones.incorrectos.Password;
     delete validaciones.correctos.Password;
-}
+};
 
 var pswRepeat = document.getElementById("passwordRepeat");
 var incorrectPswRepeat = document.getElementById("incorrectRepeatPassword");
@@ -370,7 +370,7 @@ pswRepeat.onblur = function () {
     } else if (psw === pswRepeat) {
         validaciones.correctos["Password Validation:"] = pswRepeat.value;
     }
-}
+};
 
 pswRepeat.onfocus = function () {
     pswRepeat.classList.remove("red-border");
@@ -379,7 +379,13 @@ pswRepeat.onfocus = function () {
     pswRepeat.value = "";
     delete validaciones.incorrectos["Password Validation:"];
     delete validaciones.correctos["Password Validation:"]
-}
+};
+
+var modal = document.getElementById("modalOpacity");
+var modalSuccess = document.getElementById("modalSuccess");
+var successMsg = document.getElementById("successMsg");
+var modalUnsuccess = document.getElementById("modalUnsuccess");
+var unsuccessMsg = document.getElementById("unsuccessMsg");
 
 var submitBottom = document.querySelector("#submit-buttom");
 submitBottom.onclick = function(e) {
@@ -408,29 +414,49 @@ submitBottom.onclick = function(e) {
                 })
                 .then(function(data) {
                     if (data.success) {
-                    alert("The request was successful.\n" + JSON.stringify(data.msg));
-                    localStorage.setItem("Name", nameSingUp.value);
-                    localStorage.setItem("Surname", surnameSingUp.value);
-                    localStorage.setItem("Id Number", idNumber.value);
-                    localStorage.setItem("Birth Date", date.value);
-                    localStorage.setItem("Phone", phone.value);
-                    localStorage.setItem("Address", adress.value);
-                    localStorage.setItem("City", locations.value);
-                    localStorage.setItem("Postal Code", postalCode.value);
-                    localStorage.setItem("Email", email.value);
-                    localStorage.setItem("Password", password.value);
+                        modal.style.display="block";
+                        modalSuccess.style.display="block";
+                        successMsg.innerHTML = data.msg;
+                        localStorage.setItem("Name", nameSingUp.value);
+                        localStorage.setItem("Surname", surnameSingUp.value);
+                        localStorage.setItem("Id Number", idNumber.value);
+                        localStorage.setItem("Birth Date", date.value);
+                        localStorage.setItem("Phone", phone.value);
+                        localStorage.setItem("Address", adress.value);
+                        localStorage.setItem("City", locations.value);
+                        localStorage.setItem("Postal Code", postalCode.value);
+                        localStorage.setItem("Email", email.value);
+                        localStorage.setItem("Password", password.value);
                 } else {
                     var errorMsg = "";
                     for (var i = 0; i < data.errors.length; i++) {
                         errorMsg += data.errors[i].msg + "\n";
                     }
-                    alert("There were errors with your submission:\n" + errorMsg);
+                    modal.style.display="block";
+                    modalUnsuccess.style.display="block";
+                    unsuccessMsg.innerHTML = errorMsg;
                     }
                 })
                 .catch(function(error) {
-                    alert("There was an error:\n" + error.msg);
+                    modal.style.display="block";
+                    modalUnsuccess.style.display="block";
+                    unsuccessMsg.innerHTML = error.msg;
                 })
             }
+};
+
+var modalBottom = document.getElementById("close");
+modalBottom.onclick = function() {
+  modal.style.display = "none";
+  modalSuccess.style.display="none";
+  modalUnsuccess.style.display="none";
+};
+
+var modalBottom01 = document.getElementById("close01");
+modalBottom01.onclick = function() {
+  modal.style.display = "none";
+  modalSuccess.style.display="none";
+  modalUnsuccess.style.display="none";
 };
 
 window.onload = function() {
@@ -445,4 +471,4 @@ window.onload = function() {
     email.value = localStorage.getItem("Email");
     psw.value = localStorage.getItem("Password");
     pswRepeat.value = localStorage.getItem("Password");
-}
+};

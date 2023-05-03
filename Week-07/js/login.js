@@ -76,33 +76,57 @@ psw.onfocus = function() {
     delete validaciones.correctos.password;
 }
 
+var modal = document.getElementById("modalOpacity");
+var modalSuccess = document.getElementById("modalSuccess");
+var successMsg = document.getElementById("successMsg");
+var modalUnsuccess = document.getElementById("modalUnsuccess");
+var unsuccessMsg = document.getElementById("unsuccessMsg");
+
 
 var submitBottom = document.querySelector("#submit-buttom");
 submitBottom.onclick = function(e) {
     e.preventDefault();
-        if (Object.keys(validaciones.incorrectos).length > 0) {
-            alert("The fields are wrong:" + JSON.stringify(validaciones.incorrectos, null, "\n"));
-        } else if (Object.keys(validaciones.correctos) == 0) {
-            alert("Fiels are required:\n *Email* \n *Password*")
-        } else {
-            var params = new URLSearchParams();
-            params.append("email", email.value);
-            params.append("password", psw.value);
-            var request = "https://api-rest-server.vercel.app/login" + "?" + params.toString();
+    if (Object.keys(validaciones.incorrectos).length > 0) {
+        alert("The fields are wrong:" + JSON.stringify(validaciones.incorrectos, null, "\n"));
+    } else if (Object.keys(validaciones.correctos) == 0) {
+        alert("Fiels are required:\n *Email* \n *Password*");
+    } else {
+        var params = new URLSearchParams();
+        params.append("email", email.value);
+        params.append("password", psw.value);
+        var request = "https://api-rest-server.vercel.app/login" + "?" + params.toString();
 
-        fetch(request)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(data) {
-            if (data.success){
-                alert("The request was successful.\n" + JSON.stringify(data.msg));
-        }   else {
-                throw new Error (data.msg);
-        }
-        })
-        .catch(function(errors) {
-            alert("There was an error:\n" + errors.message);
-        });
+    fetch(request)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        if (data.success){
+            modal.style.display="block";
+            modalSuccess.style.display="block";
+            successMsg.innerHTML = data.msg;
+    }   else {
+            modal.style.display="block";
+            modalUnsuccess.style.display="block";
+            unsuccessMsg.innerHTML = data.msg;
+    }
+    })
+    .catch(function(error) {
+        alert("There was an error:\n" + error.message);
+    });
     }
 };
+
+var modalBottom = document.getElementById("close");
+modalBottom.onclick = function() {
+  modal.style.display = "none";
+  modalSuccess.style.display="none";
+  modalUnsuccess.style.display="none";
+}
+
+var modalBottom01 = document.getElementById("close01");
+modalBottom01.onclick = function() {
+  modal.style.display = "none";
+  modalSuccess.style.display="none";
+  modalUnsuccess.style.display="none";
+}

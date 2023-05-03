@@ -11,7 +11,7 @@
 :black_medium_small_square:[Week 07](#week-07)<br>
 
 <br>
-<br>
+
 <h2 id="project"> 🚀 About The Project </h2>
 <br>
 In this repository I will work on a project for Radium Rocket with my team where we will develop a system to manage the schedules of the gym, schedules of the employees, the activities and memberships. Said system must contain functionalities to can sign-up, log-in (both as user, admin, coach, etc.) choose type of membership and reserve classes that the user wish to asist, among others. Throughout the project I will describe week by week, wihch section was developed, and which technologies were learned and applied.
